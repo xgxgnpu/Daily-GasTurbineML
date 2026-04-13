@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily-GasTurbineML</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6; color: #24292f; background: #fff;
+  max-width: 1200px; margin: 0 auto; padding: 20px;
+}
+@media (prefers-color-scheme: dark) {
+  body { color: #c9d1d9; background: #0d1117; }
+  a { color: #58a6ff; }
+  table { border-color: #30363d; }
+  th { background: #161b22; }
+  tr:nth-child(even) { background: #161b22; }
+  .tab-btn { background: #21262d; color: #c9d1d9; border-color: #30363d; }
+  .tab-btn.active { background: #1f6feb; color: #fff; border-color: #1f6feb; }
+  blockquote { background: #161b22; border-color: #30363d; }
+}
+h1 { font-size: 1.8em; margin-bottom: 8px; }
+h2 { margin-top: 28px; margin-bottom: 12px; border-bottom: 2px solid #d0d7de; padding-bottom: 6px; }
+.subtitle { color: #656d76; margin-bottom: 20px; font-size: 0.95em; }
+.tabs { display: flex; gap: 8px; margin: 20px 0; border-bottom: 2px solid #d0d7de; }
+.tab-btn {
+  padding: 8px 24px; border: 1px solid #d0d7de; border-bottom: none;
+  border-radius: 6px 6px 0 0; background: #f6f8fa; cursor: pointer;
+  font-size: 14px; font-weight: 600; transition: all 0.2s;
+}
+.tab-btn.active { background: #0969da; color: #fff; border-color: #0969da; }
+.tab-btn:hover:not(.active) { background: #eaeef2; }
+#section-cn, #section-en { display: none; }
+#section-cn.active, #section-en.active { display: block; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9em; }
+th, td { padding: 10px 12px; border: 1px solid #d0d7de; text-align: left; }
+th { background: #f6f8fa; font-weight: 600; white-space: nowrap; }
+tr:nth-child(even) { background: #f6f8fa; }
+blockquote {
+  padding: 12px 16px; margin: 8px 0 16px; background: #f6f8fa;
+  border-left: 4px solid #0969da; border-radius: 0 6px 6px 0;
+  font-size: 0.9em; color: #656d76;
+}
+.paper-detail { margin: 20px 0; padding-bottom: 16px; border-bottom: 1px solid #d0d7de; }
+.paper-detail h3 { margin-bottom: 8px; color: #0969da; }
+.paper-detail ul { list-style: none; padding: 0; }
+.paper-detail li { margin: 4px 0; }
+a { color: #0969da; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.meta { display: flex; gap: 20px; flex-wrap: wrap; margin: 12px 0; font-size: 0.9em; color: #656d76; }
+.footer {
+  margin-top: 40px; padding-top: 16px; border-top: 1px solid #d0d7de;
+  text-align: center; font-size: 0.85em; color: #656d76;
+}
+</style>
+</head>
+<body>
+
+<h1>Daily-GasTurbineML</h1>
+<div class="meta">
+<span>GitHub: <a href="https://github.com/xgxgnpu/Daily-GasTurbineML">xgxgnpu/Daily-GasTurbineML</a></span>
+<span>Updated: 2026-04-13</span>
+<span>Total: 51 papers</span>
+</div>
+
+<div class="tabs">
+  <button id="btn-cn" class="tab-btn active" onclick="switchLang('cn')">中文</button>
+  <button id="btn-en" class="tab-btn" onclick="switchLang('en')">English</button>
+</div>
+
+<div id="section-cn" class="active">
+<h2>燃气轮机机器学习 — 每日文献追踪</h2>
+<p class="subtitle">共 51 篇论文，6个类别 | 追踪燃气轮机与叶轮机械领域 PINN / 深度学习最新进展</p>
+<h2>PINN — 燃气轮机与叶轮机械（3 篇）</h2>
+<table><thead><tr><th>#</th><th>发表日期</th><th>Title</th><th>作者</th><th>关键词</th><th>论文链接</th><th>代码</th></tr></thead><tbody>
+<tr><td>1</td><td>2026-03-08</td><td><strong>Meta-PINNs: Meta-Learning Enhanced Physics-Informed Machine Learning Framework for Turbomachinery Flow Predictions under Varying Operation Conditions</strong></td><td>Yuling Han et al.</td><td>PINN, Physics-Informed, Turbomachinery, Compressor, Neural Network</td><td><a href="https://arxiv.org/abs/2603.07740" target="_blank">2603.07740</a></td><td>无</td></tr>
+<tr><td>2</td><td>2025-06-24</td><td><strong>Physics-Informed Neural Networks for Industrial Gas Turbines: Recent Trends, Advancements and Challenges</strong></td><td>Afila Ajithkumar Sophiya et al.</td><td>PINN, Physics-Informed, Gas Turbine, Deep Learning, Neural Network</td><td><a href="https://arxiv.org/abs/2506.19503" target="_blank">2506.19503</a></td><td>无</td></tr>
+<tr><td>3</td><td>2023-07-15</td><td><strong>Investigation of Compressor Cascade Flow Using Physics- Informed Neural Networks with Adaptive Learning Strategy</strong></td><td>Zhihui Li et al.</td><td>PINN, Turbomachinery, Compressor, CFD, Neural Network</td><td><a href="https://arxiv.org/abs/2308.04501" target="_blank">2308.04501</a></td><td>无</td></tr>
+</tbody></table>
+<div class="paper-detail">
+<h3>1. Meta-PINNs: Meta-Learning Enhanced Physics-Informed Machine Learning Framework for Turbomachinery Flow Predictions under Varying Operation Conditions</h3>
+<ul>
+<li><strong>作者</strong>: Yuling Han, Zhihui Li, Zhibin Yu</li>
+<li><strong>发表日期</strong>: 2026-03-08</li>
+<li><strong>关键词</strong>: PINN, Physics-Informed, Turbomachinery, Compressor, Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2603.07740" target="_blank">2603.07740</a> | <a href="https://arxiv.org/pdf/2603.07740" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Coupling physics with machine learning models has shown great potential for solving fluid dynamics problems governed by partial differential equations. However, conventional methods, such as physics-informed neural networks, often suffer from slow convergence, unstable training, and limited generalization across different flow conditions. To overcome these challenges, this study proposes a novel meta-learning en- hanced physics-informed neural networks (Meta-PINNs) framework, which integrates a meta-optimization strategy into the training process. The approach allows the model to automatically...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>2. Physics-Informed Neural Networks for Industrial Gas Turbines: Recent Trends, Advancements and Challenges</h3>
+<ul>
+<li><strong>作者</strong>: Afila Ajithkumar Sophiya, Sepehr Maleki, Giuseppe Bruni, Senthil K. Krishnababu</li>
+<li><strong>发表日期</strong>: 2025-06-24</li>
+<li><strong>关键词</strong>: PINN, Physics-Informed, Gas Turbine, Deep Learning, Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2506.19503" target="_blank">2506.19503</a> | <a href="https://arxiv.org/pdf/2506.19503" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Physics-Informed Neural Networks (PINNs) have emerged as a promising computational framework for solving differential equations by integrating deep learning with physical constraints. However, their application in gas turbines is still in its early stages, requiring further refinement and standardization for wider adoption. This survey provides a comprehensive review of PINNs in Industrial Gas Turbines (IGTs) research, highlighting their contributions to the analysis of aerodynamic and aeromechanical phenomena, as well as their applications in flow field reconstruction, fatigue evaluation, and...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>3. Investigation of Compressor Cascade Flow Using Physics- Informed Neural Networks with Adaptive Learning Strategy</h3>
+<ul>
+<li><strong>作者</strong>: Zhihui Li, Francesco Montomoli, Sanjiv Sharma</li>
+<li><strong>发表日期</strong>: 2023-07-15</li>
+<li><strong>关键词</strong>: PINN, Turbomachinery, Compressor, CFD, Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2308.04501" target="_blank">2308.04501</a> | <a href="https://arxiv.org/pdf/2308.04501" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>In this study, we utilize the emerging Physics Informed Neural Networks (PINNs) approach for the first time to predict the flow field of a compressor cascade. Different from conventional training methods, a new adaptive learning strategy that mitigates gradient imbalance through incorporating adaptive weights in conjunction with dynamically adjusting learning rate is used during the training process to improve the convergence of PINNs. The performance of PINNs is assessed here by solving both the forward and inverse problems. In the forward problem, by encapsulating the physical relations amon...</blockquote>
+</div>
+<h2>代理模型 — 性能预测（10 篇）</h2>
+<table><thead><tr><th>#</th><th>发表日期</th><th>Title</th><th>作者</th><th>关键词</th><th>论文链接</th><th>代码</th></tr></thead><tbody>
+<tr><td>4</td><td>2026-03-16</td><td><strong>Generative Inverse Design with Abstention via Diagonal Flow Matching</strong></td><td>Miguel de Campos et al.</td><td>Gas Turbine, Neural Network</td><td><a href="https://arxiv.org/abs/2603.15925" target="_blank">2603.15925</a></td><td>无</td></tr>
+<tr><td>5</td><td>2026-02-14</td><td><strong>Data-driven Bi-level Optimization of Thermal Power Systems with embedded Artificial Neural Networks</strong></td><td>Talha Ansar et al.</td><td>Gas Turbine, Data-Driven, Neural Network, Optimization</td><td><a href="https://arxiv.org/abs/2602.13746" target="_blank">2602.13746</a></td><td>无</td></tr>
+<tr><td>6</td><td>2026-01-30</td><td><strong>How well do generative models solve inverse problems? A benchmark study</strong></td><td>Patrick Krüger et al.</td><td>Gas Turbine, Neural Network</td><td><a href="https://arxiv.org/abs/2601.23238" target="_blank">2601.23238</a></td><td>无</td></tr>
+<tr><td>7</td><td>2025-07-11</td><td><strong>Domain-Informed Operation Excellence of Gas Turbine System with Machine Learning</strong></td><td>Waqar Muhammad Ashraf et al.</td><td>Gas Turbine, Data-Driven, Optimization</td><td><a href="https://arxiv.org/abs/2507.08697" target="_blank">2507.08697</a></td><td>无</td></tr>
+<tr><td>8</td><td>2025-06-16</td><td><strong>Condition Monitoring with Machine Learning: A Data-Driven Framework for Quantifying Wind Turbine Energy Loss</strong></td><td>Emil Marcus Buchberg et al.</td><td>Turbine Blade, Data-Driven, Anomaly Detection</td><td><a href="https://arxiv.org/abs/2506.13012" target="_blank">2506.13012</a></td><td><a href="https://github.com/EmilBuch/Condition-Monitoring-with-Machine-Learning" target="_blank">Code</a></td></tr>
+<tr><td>9</td><td>2025-04-06</td><td><strong>A model agnostic eXplainable AI based fuzzy framework for sensor constrained Aerospace maintenance applications</strong></td><td>Bharadwaj Dogga et al.</td><td>Gas Turbine</td><td><a href="https://arxiv.org/abs/2504.04541" target="_blank">2504.04541</a></td><td>无</td></tr>
+<tr><td>10</td><td>2025-03-25</td><td><strong>Estimation of the Acoustic Field in a Uniform Duct with Mean Flow using Neural Networks</strong></td><td>D. Veerababu et al.</td><td>Gas Turbine, Neural Network, Optimization</td><td><a href="https://arxiv.org/abs/2503.19412" target="_blank">2503.19412</a></td><td>无</td></tr>
+<tr><td>11</td><td>2025-03-18</td><td><strong>C(NN)FD -- Deep Learning Modelling of Multi-Stage Axial Compressors Aerodynamics</strong></td><td>Giuseppe Bruni et al.</td><td>Gas Turbine, Turbomachinery, Compressor, Deep Learning, CFD</td><td><a href="https://arxiv.org/abs/2503.14369" target="_blank">2503.14369</a></td><td>无</td></tr>
+<tr><td>12</td><td>2025-03-17</td><td><strong>Dynamical Mode Recognition of Turbulent Flames in a Swirl-stabilized Annular Combustor by a Time-series Learning Approach</strong></td><td>Tao Yang et al.</td><td>Gas Turbine, RANS, Combustion, Neural Network</td><td><a href="https://arxiv.org/abs/2503.13559" target="_blank">2503.13559</a></td><td>无</td></tr>
+<tr><td>13</td><td>2025-02-19</td><td><strong>A Supervised Machine-Learning Approach For Turboshaft Engine Dynamic Modeling Under Real Flight Conditions</strong></td><td>Damiano Paniccia et al.</td><td>RANS, Data-Driven, Neural Network</td><td><a href="https://arxiv.org/abs/2502.14120" target="_blank">2502.14120</a></td><td>无</td></tr>
+</tbody></table>
+<div class="paper-detail">
+<h3>4. Generative Inverse Design with Abstention via Diagonal Flow Matching</h3>
+<ul>
+<li><strong>作者</strong>: Miguel de Campos, Werner Krebs, Hanno Gottschalk</li>
+<li><strong>发表日期</strong>: 2026-03-16</li>
+<li><strong>关键词</strong>: Gas Turbine, Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2603.15925" target="_blank">2603.15925</a> | <a href="https://arxiv.org/pdf/2603.15925" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Inverse design aims to find design parameters $x$ achieving target performance $y^*$. Generative approaches learn bidirectional mappings between designs and labels, enabling diverse solution sampling. However, standard conditional flow matching (CFM), when adapted to inverse problems by pairing labels with design parameters, exhibits strong sensitivity to their arbitrary ordering and scaling, leading to unstable training. We introduce Diagonal Flow Matching (Diag-CFM), which resolves this through a zero-anchoring strategy that pairs design coordinates with noise and labels with zero, making th...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>5. Data-driven Bi-level Optimization of Thermal Power Systems with embedded Artificial Neural Networks</h3>
+<ul>
+<li><strong>作者</strong>: Talha Ansar, Muhammad Mujtaba Abbas, Ramit Debnath, Vivek Dua, Waqar Muhammad Ashraf</li>
+<li><strong>发表日期</strong>: 2026-02-14</li>
+<li><strong>关键词</strong>: Gas Turbine, Data-Driven, Neural Network, Optimization</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2602.13746" target="_blank">2602.13746</a> | <a href="https://arxiv.org/pdf/2602.13746" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Industrial thermal power systems have coupled performance variables with hierarchical order of importance, making their simultaneous optimization computationally challenging or infeasible. This barrier limits the integrated and computationally scaleable operation optimization of industrial thermal power systems. To address this issue for large-scale engineering systems, we present a fully machine learning-powered bi-level optimization framework for data-driven optimization of industrial thermal power systems. The objective functions of upper and lower levels are approximated by artificial neur...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>6. How well do generative models solve inverse problems? A benchmark study</h3>
+<ul>
+<li><strong>作者</strong>: Patrick Krüger, Patrick Materne, Werner Krebs, Hanno Gottschalk</li>
+<li><strong>发表日期</strong>: 2026-01-30</li>
+<li><strong>关键词</strong>: Gas Turbine, Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2601.23238" target="_blank">2601.23238</a> | <a href="https://arxiv.org/pdf/2601.23238" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Generative learning generates high dimensional data based on low dimensional conditions, also called prompts. Therefore, generative learning algorithms are eligible for solving (Bayesian) inverse problems. In this article we compare a traditional Bayesian inverse approach based on a forward regression model and a prior sampled with the Markov Chain Monte Carlo method with three state of the art generative learning models, namely conditional Generative Adversarial Networks, Invertible Neural Networks and Conditional Flow Matching. We apply them to a problem of gas turbine combustor design where...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>7. Domain-Informed Operation Excellence of Gas Turbine System with Machine Learning</h3>
+<ul>
+<li><strong>作者</strong>: Waqar Muhammad Ashraf, Amir H. Keshavarzzadeh, Abdulelah S. Alshehri, Abdulrahman bin Jumah, Ramit Debnath et al.</li>
+<li><strong>发表日期</strong>: 2025-07-11</li>
+<li><strong>关键词</strong>: Gas Turbine, Data-Driven, Optimization</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2507.08697" target="_blank">2507.08697</a> | <a href="https://arxiv.org/pdf/2507.08697" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>The domain-consistent adoption of artificial intelligence (AI) remains low in thermal power plants due to the black-box nature of AI algorithms and low representation of domain knowledge in conventional data-centric analytics. In this paper, we develop a MAhalanobis Distance-based OPTimization (MAD-OPT) framework that incorporates the Mahalanobis distance-based constraint to introduce domain knowledge into data-centric analytics. The developed MAD-OPT framework is applied to maximize thermal efficiency and minimize turbine heat rate for a 395 MW capacity gas turbine system. We demonstrate that...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>8. Condition Monitoring with Machine Learning: A Data-Driven Framework for Quantifying Wind Turbine Energy Loss</h3>
+<ul>
+<li><strong>作者</strong>: Emil Marcus Buchberg, Kent Vugs Nielsen</li>
+<li><strong>发表日期</strong>: 2025-06-16</li>
+<li><strong>关键词</strong>: Turbine Blade, Data-Driven, Anomaly Detection</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2506.13012" target="_blank">2506.13012</a> | <a href="https://arxiv.org/pdf/2506.13012" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: <a href="https://github.com/EmilBuch/Condition-Monitoring-with-Machine-Learning" target="_blank">Code</a></li>
+</ul>
+<blockquote>Wind energy significantly contributes to the global shift towards renewable energy, yet operational challenges, such as Leading-Edge Erosion on wind turbine blades, notably reduce energy output. This study introduces an advanced, scalable machine learning framework for condition monitoring of wind turbines, specifically targeting improved detection of anomalies using Supervisory Control and Data Acquisition data. The framework effectively isolates normal turbine behavior through rigorous preprocessing, incorporating domain-specific rules and anomaly detection filters, including Gaussian Mixtur...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>9. A model agnostic eXplainable AI based fuzzy framework for sensor constrained Aerospace maintenance applications</h3>
+<ul>
+<li><strong>作者</strong>: Bharadwaj Dogga, Anoop Sathyan, Kelly Cohen</li>
+<li><strong>发表日期</strong>: 2025-04-06</li>
+<li><strong>关键词</strong>: Gas Turbine</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2504.04541" target="_blank">2504.04541</a> | <a href="https://arxiv.org/pdf/2504.04541" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Machine Learning methods have extensively evolved to support industrial big data methods and their corresponding need in gas turbine maintenance and prognostics. However, most unsupervised methods need extensively labeled data to perform predictions across many dimensions. The cutting edge of small and medium applications do not necessarily maintain operational sensors and data acquisition with rising costs and diminishing profits. We propose a framework to make sensor maintenance priority decisions using a combination of SHAP, UMAP, Fuzzy C-means clustering. An aerospace jet engine dataset is...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>10. Estimation of the Acoustic Field in a Uniform Duct with Mean Flow using Neural Networks</h3>
+<ul>
+<li><strong>作者</strong>: D. Veerababu, Prasanta K. Ghosh</li>
+<li><strong>发表日期</strong>: 2025-03-25</li>
+<li><strong>关键词</strong>: Gas Turbine, Neural Network, Optimization</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2503.19412" target="_blank">2503.19412</a> | <a href="https://arxiv.org/pdf/2503.19412" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>The study of sound propagation in a uniform duct having a mean flow has many applications, such as in the design of gas turbines, heating, ventilation and air conditioning ducts, automotive intake and exhaust systems, and in the modeling of speech. In this paper, the convective effects of the mean flow on the plane wave acoustic field inside a uniform duct were studied using artificial neural networks. The governing differential equation and the associated boundary conditions form a constrained optimization problem. It is converted to an unconstrained optimization problem and solved by approxi...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>11. C(NN)FD -- Deep Learning Modelling of Multi-Stage Axial Compressors Aerodynamics</h3>
+<ul>
+<li><strong>作者</strong>: Giuseppe Bruni, Sepehr Maleki, Senthil K Krishnababu</li>
+<li><strong>发表日期</strong>: 2025-03-18</li>
+<li><strong>关键词</strong>: Gas Turbine, Turbomachinery, Compressor, Deep Learning, CFD</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2503.14369" target="_blank">2503.14369</a> | <a href="https://arxiv.org/pdf/2503.14369" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>The field of scientific machine learning and its applications to numerical analyses such as CFD has recently experienced a surge in interest. While its viability has been demonstrated in different domains, it has not yet reached a level of robustness and scalability to make it practical for industrial applications in the turbomachinery field. The highly complex, turbulent, and three-dimensional flows of multi-stage axial compressors for gas turbine applications represent a remarkably challenging case. This is due to the high-dimensionality of the regression of the flow-field from geometrical a...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>12. Dynamical Mode Recognition of Turbulent Flames in a Swirl-stabilized Annular Combustor by a Time-series Learning Approach</h3>
+<ul>
+<li><strong>作者</strong>: Tao Yang, Weiming Xu, Liangliang Xu, Peng Zhang</li>
+<li><strong>发表日期</strong>: 2025-03-17</li>
+<li><strong>关键词</strong>: Gas Turbine, RANS, Combustion, Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2503.13559" target="_blank">2503.13559</a> | <a href="https://arxiv.org/pdf/2503.13559" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Thermoacoustic instability in annular combustors, essential to aero engines and modern gas turbines, can severely impair operational stability and efficiency, accurately recognizing and understanding various combustion modes is the prerequisite for understanding and controlling combustion instabilities. However, the high-dimensional spatial-temporal dynamics of turbulent flames typically pose considerable challenges to mode recognition. Based on the bidirectional temporal and nonlinear dimensionality reduction models, this study introduces a two-layer bidirectional long short-term memory varia...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>13. A Supervised Machine-Learning Approach For Turboshaft Engine Dynamic Modeling Under Real Flight Conditions</h3>
+<ul>
+<li><strong>作者</strong>: Damiano Paniccia, Francesco Aldo Tucci, Joel Guerrero, Luigi Capone, Nicoletta Sanguini et al.</li>
+<li><strong>发表日期</strong>: 2025-02-19</li>
+<li><strong>关键词</strong>: RANS, Data-Driven, Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2502.14120" target="_blank">2502.14120</a> | <a href="https://arxiv.org/pdf/2502.14120" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Rotorcraft engines are highly complex, nonlinear thermodynamic systems that operate under varying environmental and flight conditions. Simulating their dynamics is crucial for design, fault diagnostics, and deterioration control phases, and requires robust and reliable control systems to estimate engine performance throughout flight envelope. However, the development of detailed physical models of the engine based on numerical simulations is a very challenging task due to the complex and entangled physics driving the engine. In this scenario, data-driven machine-learning techniques are of grea...</blockquote>
+</div>
+<h2>深度学习 — 叶轮机内流与气动（10 篇）</h2>
+<table><thead><tr><th>#</th><th>发表日期</th><th>Title</th><th>作者</th><th>关键词</th><th>论文链接</th><th>代码</th></tr></thead><tbody>
+<tr><td>14</td><td>2026-04-08</td><td><strong>TurboAgent: An LLM-Driven Autonomous Multi-Agent Framework for Turbomachinery Aerodynamic Design</strong></td><td>Juan Du et al.</td><td>Turbomachinery, Compressor, CFD, RANS, Performance Prediction</td><td><a href="https://arxiv.org/abs/2604.06747" target="_blank">2604.06747</a></td><td>无</td></tr>
+<tr><td>15</td><td>2026-03-30</td><td><strong>Data-informed lifting line theory</strong></td><td>Arjun Sharma et al.</td><td>Data-Driven, Neural Network, Optimization</td><td><a href="https://arxiv.org/abs/2603.29051" target="_blank">2603.29051</a></td><td>无</td></tr>
+<tr><td>16</td><td>2026-03-30</td><td><strong>FluidFlow: a flow-matching generative model for fluid dynamics surrogates on unstructured meshes</strong></td><td>David Ramos et al.</td><td>Deep Learning, Surrogate Model, CFD, RANS, Data-Driven</td><td><a href="https://arxiv.org/abs/2604.08586" target="_blank">2604.08586</a></td><td>无</td></tr>
+<tr><td>17</td><td>2026-03-22</td><td><strong>High-Endurance UCAV Propulsion System: A 1-D CNN-Based Real-Time Fault Classification for Tactical-Grade IPMSM Drive</strong></td><td>Tahmin Mahmud et al.</td><td>Neural Network</td><td><a href="https://arxiv.org/abs/2603.21133" target="_blank">2603.21133</a></td><td>无</td></tr>
+<tr><td>18</td><td>2026-03-09</td><td><strong>Neural Network Tuning of FSMPC for Drives</strong></td><td>Juana M. Martínez-Heredia et al.</td><td>Neural Network</td><td><a href="https://arxiv.org/abs/2603.08816" target="_blank">2603.08816</a></td><td>无</td></tr>
+<tr><td>19</td><td>2026-03-09</td><td><strong>Real-Time Drone Detection in Event Cameras via Per-Pixel Frequency Analysis</strong></td><td>Michael Bezick et al.</td><td>PINN, Deep Learning, RANS</td><td><a href="https://arxiv.org/abs/2603.08386" target="_blank">2603.08386</a></td><td>无</td></tr>
+<tr><td>20</td><td>2026-03-07</td><td><strong>Optimize discrete loss with finite-difference physics constraint and time-stepping for PDE solving</strong></td><td>Yali Luo et al.</td><td>PINN, Physics-Informed, CFD, RANS, Aerodynamics</td><td><a href="https://arxiv.org/abs/2603.07151" target="_blank">2603.07151</a></td><td>无</td></tr>
+<tr><td>21</td><td>2026-02-28</td><td><strong>AI-IO: An Aerodynamics-Inspired Real-Time Inertial Odometry for Quadrotors</strong></td><td>Jiahao Cui et al.</td><td>RANS, Aerodynamics</td><td><a href="https://arxiv.org/abs/2603.00597" target="_blank">2603.00597</a></td><td>无</td></tr>
+<tr><td>22</td><td>2026-02-24</td><td><strong>Generative Deep Learning for the Two-Dimensional Quantum Rotor Model</strong></td><td>Yanyang Wang et al.</td><td>Deep Learning, RANS, Optimization</td><td><a href="https://arxiv.org/abs/2602.20772" target="_blank">2602.20772</a></td><td>无</td></tr>
+<tr><td>23</td><td>2026-02-18</td><td><strong>Reinforcement learning for path integrals in quantum statistical physics</strong></td><td>Timour Ichmoukhamedov et al.</td><td>Neural Network</td><td><a href="https://arxiv.org/abs/2602.16176" target="_blank">2602.16176</a></td><td>无</td></tr>
+</tbody></table>
+<div class="paper-detail">
+<h3>14. TurboAgent: An LLM-Driven Autonomous Multi-Agent Framework for Turbomachinery Aerodynamic Design</h3>
+<ul>
+<li><strong>作者</strong>: Juan Du, Yueteng Wu, Pan Zhao, Yuze Liu, Min Zhang et al.</li>
+<li><strong>发表日期</strong>: 2026-04-08</li>
+<li><strong>关键词</strong>: Turbomachinery, Compressor, CFD, RANS, Performance Prediction</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2604.06747" target="_blank">2604.06747</a> | <a href="https://arxiv.org/pdf/2604.06747" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>The aerodynamic design of turbomachinery is a complex and tightly coupled multi-stage process involving geometry generation, performance prediction, optimization, and high-fidelity physical validation. Existing intelligent design approaches typically focus on individual stages or rely on loosely coupled pipelines, making fully autonomous end-to-end design challenging. To address this issue, this study proposes TurboAgent, a large language model (LLM)-driven autonomous multi-agent framework for turbomachinery aerodynamic design and optimization. The LLM serves as the core for task planning and ...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>15. Data-informed lifting line theory</h3>
+<ul>
+<li><strong>作者</strong>: Arjun Sharma, Jonas A. Actor, Peter A. Bosler</li>
+<li><strong>发表日期</strong>: 2026-03-30</li>
+<li><strong>关键词</strong>: Data-Driven, Neural Network, Optimization</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2603.29051" target="_blank">2603.29051</a> | <a href="https://arxiv.org/pdf/2603.29051" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>We present a data-driven framework that extends the predictive capability of classical lifting-line theory (LLT) to a wider aerodynamic regime by incorporating higher-fidelity aerodynamic data from panel method simulations. A neural network architecture with a convolutional layer followed by fully connected layers is developed, comprising two parallel subnetworks to separately process spanwise collocation points and global geometric/aerodynamic inputs such as angle of attack, chord, twist, airfoil distribution, and sweep. Among several configurations tested, this architecture is most effective...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>16. FluidFlow: a flow-matching generative model for fluid dynamics surrogates on unstructured meshes</h3>
+<ul>
+<li><strong>作者</strong>: David Ramos, Lucas Lacasa, Fermín Gutiérrez, Eusebio Valero, Gonzalo Rubio</li>
+<li><strong>发表日期</strong>: 2026-03-30</li>
+<li><strong>关键词</strong>: Deep Learning, Surrogate Model, CFD, RANS, Data-Driven</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2604.08586" target="_blank">2604.08586</a> | <a href="https://arxiv.org/pdf/2604.08586" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Computational fluid dynamics (CFD) provides high-fidelity simulations of fluid flows but remains computationally expensive for many-query applications. In recent years deep learning (DL) has been used to construct data-driven fluid-dynamic surrogate models. In this work we consider a different learning paradigm and embrace generative modelling as a framework for constructing scalable fluid-dynamics surrogate models. We introduce FluidFlow, a generative model based on conditional flow-matching, a recent alternative to diffusion models that learns deterministic transport maps between noise and d...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>17. High-Endurance UCAV Propulsion System: A 1-D CNN-Based Real-Time Fault Classification for Tactical-Grade IPMSM Drive</h3>
+<ul>
+<li><strong>作者</strong>: Tahmin Mahmud</li>
+<li><strong>发表日期</strong>: 2026-03-22</li>
+<li><strong>关键词</strong>: Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2603.21133" target="_blank">2603.21133</a> | <a href="https://arxiv.org/pdf/2603.21133" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>High-performance propulsion for mission-critical applications demands unprecedented reliability and real-time fault resilience. Conventional diagnostic methods (signal-based analysis and standard ML models) are essential for stator/rotor fault detection but suffer from high latency and poor generalization across variable speeds. This paper proposes a 1-D Convolutional Neural Network (CNN) framework for real-time fault classification in the HPDM-350 interior permanent magnet synchronous motor (IPMSM). The proposed architecture extracts discriminative features directly from high-frequency curren...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>18. Neural Network Tuning of FSMPC for Drives</h3>
+<ul>
+<li><strong>作者</strong>: Juana M. Martínez-Heredia, José L. Mora</li>
+<li><strong>发表日期</strong>: 2026-03-09</li>
+<li><strong>关键词</strong>: Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2603.08816" target="_blank">2603.08816</a> | <a href="https://arxiv.org/pdf/2603.08816" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>This preprint presents a neural network tuner for the finite state model predictive control of an induction motor. The tuner deals with the parameters of the controllers in the speed loop and in the stator current loop. The results are assessed using a five phase machine in an experimental setup. Data for the neural network training is obtained from the experiments using step tests.</blockquote>
+</div>
+<div class="paper-detail">
+<h3>19. Real-Time Drone Detection in Event Cameras via Per-Pixel Frequency Analysis</h3>
+<ul>
+<li><strong>作者</strong>: Michael Bezick, Majid Sahin</li>
+<li><strong>发表日期</strong>: 2026-03-09</li>
+<li><strong>关键词</strong>: PINN, Deep Learning, RANS</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2603.08386" target="_blank">2603.08386</a> | <a href="https://arxiv.org/pdf/2603.08386" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Detecting fast-moving objects, such as unmanned aerial vehicle (UAV), from event camera data is challenging due to the sparse, asynchronous nature of the input. Traditional Discrete Fourier Transforms (DFT) are effective at identifying periodic signals, such as spinning rotors, but they assume uniformly sampled data, which event cameras do not provide. We propose a novel per-pixel temporal analysis framework using the Non-uniform Discrete Fourier Transform (NDFT), which we call Drone Detection via Harmonic Fingerprinting (DDHF). Our method uses purely analytical techniques that identify the fr...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>20. Optimize discrete loss with finite-difference physics constraint and time-stepping for PDE solving</h3>
+<ul>
+<li><strong>作者</strong>: Yali Luo, Yiye Zou, Heng Zhang, Mingjie Zhang, Gang Wei et al.</li>
+<li><strong>发表日期</strong>: 2026-03-07</li>
+<li><strong>关键词</strong>: PINN, Physics-Informed, CFD, RANS, Aerodynamics</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2603.07151" target="_blank">2603.07151</a> | <a href="https://arxiv.org/pdf/2603.07151" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Computational Fluid Dynamics (CFD) is an important approach for analyzing flow phenomena and predicting engineering-relevant quantities. The governing physics is formulated as partial differential equations(PDEs) and solved numerically on computational grids. Physics-informed neural networks(PINNs) have emerged as a popular optimization-based approach for solving PDEs, but they often suffer from ill-conditioned objectives and the high cost of automatic differentiation. Optimization-based discretizations such as ODIL mitigate several PINN drawbacks by optimizing discrete variables directly, yet...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>21. AI-IO: An Aerodynamics-Inspired Real-Time Inertial Odometry for Quadrotors</h3>
+<ul>
+<li><strong>作者</strong>: Jiahao Cui, Feng Yu, Linzuo Zhang, Yu Hu, Danping Zou</li>
+<li><strong>发表日期</strong>: 2026-02-28</li>
+<li><strong>关键词</strong>: RANS, Aerodynamics</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2603.00597" target="_blank">2603.00597</a> | <a href="https://arxiv.org/pdf/2603.00597" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Inertial Odometry (IO) has gained attention in quadrotor applications due to its sole reliance on inertial measurement units (IMUs), attributed to its lightweight design, low cost, and robust performance across diverse environments. However, most existing learning-based inertial odometry systems for quadrotors either use only IMU data or include additional dynamics-related inputs such as thrust, but still lack a principled formulation of the underlying physical model to be learned. This lack of interpretability hampers the model's ability to generalize and often limits its accuracy. In this wo...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>22. Generative Deep Learning for the Two-Dimensional Quantum Rotor Model</h3>
+<ul>
+<li><strong>作者</strong>: Yanyang Wang, Feng Gao, Kui Tuo, Wei Li</li>
+<li><strong>发表日期</strong>: 2026-02-24</li>
+<li><strong>关键词</strong>: Deep Learning, RANS, Optimization</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2602.20772" target="_blank">2602.20772</a> | <a href="https://arxiv.org/pdf/2602.20772" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>The advancement of diverse generative deep learning models and their variants has furnished substantial insights for investigating quantum many-body problems. In this work, we design two models based on the foundational architecture of generative adversarial networks (GANs) to investigate the ground-state properties and phase transition characteristics of the two-dimensional quantum rotor model (QRM). Within a semi-supervised learning framework, we incorporate multiple layers of transposed convolutions in the generator, enabling the conditional GAN to more efficiently extract low-dimensional e...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>23. Reinforcement learning for path integrals in quantum statistical physics</h3>
+<ul>
+<li><strong>作者</strong>: Timour Ichmoukhamedov, Dries Sels</li>
+<li><strong>发表日期</strong>: 2026-02-18</li>
+<li><strong>关键词</strong>: Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2602.16176" target="_blank">2602.16176</a> | <a href="https://arxiv.org/pdf/2602.16176" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Machine learning is rapidly finding its way into the field of computational quantum physics. One of the most popular and widely studied approaches in this direction is to use neural networks to model quantum states (NQS) in the Hamiltonian formulation of quantum mechanics. However, an alternative angle of attack to leverage machine learning in physics is through the path integral formulation, which has so far received far more limited attention. In this paper, we explore how reinforcement learning can be used to compute a class of Euclidean path integrals that yield the thermal density matrix ...</blockquote>
+</div>
+<h2>CFD 与机器学习融合（10 篇）</h2>
+<table><thead><tr><th>#</th><th>发表日期</th><th>Title</th><th>作者</th><th>关键词</th><th>论文链接</th><th>代码</th></tr></thead><tbody>
+<tr><td>24</td><td>2026-03-26</td><td><strong>Data-Driven Modal Decomposition Analysis of Unsteady Flow in a Multi-Stage Turbine</strong></td><td>Yalu Zhu et al.</td><td>RANS, Data-Driven</td><td><a href="https://arxiv.org/abs/2603.24905" target="_blank">2603.24905</a></td><td>无</td></tr>
+<tr><td>25</td><td>2026-02-09</td><td><strong>A few-shot and physically restorable symbolic regression turbulence model based on normalized general effective-viscosity hypothesis</strong></td><td>Ziqi Ji et al.</td><td>Compressor, RANS, Data-Driven</td><td><a href="https://arxiv.org/abs/2602.08270" target="_blank">2602.08270</a></td><td>无</td></tr>
+<tr><td>26</td><td>2025-09-21</td><td><strong>Toward a unified data-driven turbulence model through multi-objective learning</strong></td><td>Zhuo-Ran Liu et al.</td><td>Gas Turbine, Data-Driven</td><td><a href="https://arxiv.org/abs/2509.17189" target="_blank">2509.17189</a></td><td>无</td></tr>
+<tr><td>27</td><td>2025-05-26</td><td><strong>Predicting Onflow Parameters Using Transfer Learning for Domain and Task Adaptation</strong></td><td>Emre Yilmaz et al.</td><td>CFD, RANS, Data-Driven, Neural Network, Transfer Learning</td><td><a href="https://arxiv.org/abs/2506.14784" target="_blank">2506.14784</a></td><td>无</td></tr>
+<tr><td>28</td><td>2024-10-16</td><td><strong>Enhancing generalizability of machine learning general effective-viscosity turbulence model via tensor basis normalization</strong></td><td>Ziqi Ji et al.</td><td>Compressor, RANS</td><td><a href="https://arxiv.org/abs/2410.12255" target="_blank">2410.12255</a></td><td>无</td></tr>
+<tr><td>29</td><td>2024-09-12</td><td><strong>Enhancing Accuracy of Transition Models for Gas Turbine Applications Through Data-Driven Approaches</strong></td><td>Harshal D. Akolekar et al.</td><td>Gas Turbine, RANS, Data-Driven</td><td><a href="https://arxiv.org/abs/2409.07803" target="_blank">2409.07803</a></td><td>无</td></tr>
+<tr><td>30</td><td>2024-08-26</td><td><strong>Model-Based Reinforcement Learning for Control of Strongly-Disturbed Unsteady Aerodynamic Flows</strong></td><td>Zhecheng Liu et al.</td><td>CFD, RANS, Neural Network, Flow Field</td><td><a href="https://arxiv.org/abs/2408.14685" target="_blank">2408.14685</a></td><td>无</td></tr>
+<tr><td>31</td><td>2024-08-12</td><td><strong>Implicit Neural Representation For Accurate CFD Flow Field Prediction</strong></td><td>Laurent de Vito et al.</td><td>Compressor, Deep Learning, CFD, Data-Driven, Neural Network</td><td><a href="https://arxiv.org/abs/2408.06486" target="_blank">2408.06486</a></td><td>无</td></tr>
+<tr><td>32</td><td>2024-04-27</td><td><strong>Dynamical Mode Recognition of Coupled Flame Oscillators by Supervised and Unsupervised Learning Approaches</strong></td><td>Weiming Xu et al.</td><td>Gas Turbine, RANS, Combustion, Data-Driven</td><td><a href="https://arxiv.org/abs/2404.17801" target="_blank">2404.17801</a></td><td>无</td></tr>
+<tr><td>33</td><td>2023-11-20</td><td><strong>Forward Gradients for Data-Driven CFD Wall Modeling</strong></td><td>Jan Hückelheim et al.</td><td>Gas Turbine, CFD, Data-Driven, Neural Network, Optimization</td><td><a href="https://arxiv.org/abs/2311.11876" target="_blank">2311.11876</a></td><td>无</td></tr>
+</tbody></table>
+<div class="paper-detail">
+<h3>24. Data-Driven Modal Decomposition Analysis of Unsteady Flow in a Multi-Stage Turbine</h3>
+<ul>
+<li><strong>作者</strong>: Yalu Zhu, Feng Liu</li>
+<li><strong>发表日期</strong>: 2026-03-26</li>
+<li><strong>关键词</strong>: RANS, Data-Driven</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2603.24905" target="_blank">2603.24905</a> | <a href="https://arxiv.org/pdf/2603.24905" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Two data-driven modal analysis approaches, proper orthogonal decomposition (POD) and dynamic mode decomposition (DMD), are applied to analyze the unsteady flow obtained by solving the Reynolds-averaged Navier-Stokes (RANS) equations in a 1.5-stage axial turbine. The reduced-order reconstructed pressure, dominant mode shapes, and dynamic features of these dominant modes in the downstream stator of the turbine are compared between POD and four DMD variants. It is found that the DMD methods based on the amplitude criterion, the Tissot criterion, and the sparsity-promoting DMD (SP-DMD) achieve rec...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>25. A few-shot and physically restorable symbolic regression turbulence model based on normalized general effective-viscosity hypothesis</h3>
+<ul>
+<li><strong>作者</strong>: Ziqi Ji, Penghao Duan, Gang Du</li>
+<li><strong>发表日期</strong>: 2026-02-09</li>
+<li><strong>关键词</strong>: Compressor, RANS, Data-Driven</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2602.08270" target="_blank">2602.08270</a> | <a href="https://arxiv.org/pdf/2602.08270" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Turbulence is a complex, irregular flow phenomenon ubiquitous in natural processes and engineering applications. The Reynolds-averaged Navier-Stokes (RANS) method, owing to its low computational cost, has become the primary approach for rapid simulation of engineering turbulence problems. However, the inaccuracy of classical turbulence models constitutes the main drawback of the RANS framework. With the rapid development of data-driven approaches, many data-driven turbulence models have been proposed, yet they still suffer from issues of generalizability and accuracy. In this work, we propose ...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>26. Toward a unified data-driven turbulence model through multi-objective learning</h3>
+<ul>
+<li><strong>作者</strong>: Zhuo-Ran Liu, Hao-Chen Wang, Zhuo-Lin Zhao, Heng Xiao</li>
+<li><strong>发表日期</strong>: 2025-09-21</li>
+<li><strong>关键词</strong>: Gas Turbine, Data-Driven</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2509.17189" target="_blank">2509.17189</a> | <a href="https://arxiv.org/pdf/2509.17189" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Turbulence remains one of the last unresolved problems of classical physics and a major bottleneck to accurate flow prediction in climate, aerospace, and energy systems. Industrial simulations therefore rely on averaged representations of turbulence, which often struggle to predict flows governed by multiple interacting mechanisms. We present a unified, data-driven turbulence modeling framework designed to learn robustly from sparse, indirect observations across diverse flow regimes. The framework embeds physical consistency into a flexible, frame-invariant closure, automatically selects repre...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>27. Predicting Onflow Parameters Using Transfer Learning for Domain and Task Adaptation</h3>
+<ul>
+<li><strong>作者</strong>: Emre Yilmaz, Philipp Bekemeyer</li>
+<li><strong>发表日期</strong>: 2025-05-26</li>
+<li><strong>关键词</strong>: CFD, RANS, Data-Driven, Neural Network, Transfer Learning</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2506.14784" target="_blank">2506.14784</a> | <a href="https://arxiv.org/pdf/2506.14784" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Determining onflow parameters is crucial from the perspectives of wind tunnel testing and regular flight and wind turbine operations. These parameters have traditionally been predicted via direct measurements which might lead to challenges in case of sensor faults. Alternatively, a data-driven prediction model based on surface pressure data can be used to determine these parameters. It is essential that such predictors achieve close to real-time learning as dictated by practical applications such as monitoring wind tunnel operations or learning the variations in aerodynamic performance of aero...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>28. Enhancing generalizability of machine learning general effective-viscosity turbulence model via tensor basis normalization</h3>
+<ul>
+<li><strong>作者</strong>: Ziqi Ji, Penghao Duan, Gang Du</li>
+<li><strong>发表日期</strong>: 2024-10-16</li>
+<li><strong>关键词</strong>: Compressor, RANS</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2410.12255" target="_blank">2410.12255</a> | <a href="https://arxiv.org/pdf/2410.12255" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>With the rapid advancement of machine learning techniques, the development and study of machine learning turbulence models have become increasingly prevalent. As a critical component of turbulence modeling, the constitutive relationship between the Reynolds stress tensor and the mean flow quantities, modeled using machine learning methods, faces a pressing challenge: the lack of generalizability. To address this issue, we propose a novel tensor basis normalization technique to improve machine learning turbulence models, grounded in the general effective-viscosity hypothesis. In this study, we ...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>29. Enhancing Accuracy of Transition Models for Gas Turbine Applications Through Data-Driven Approaches</h3>
+<ul>
+<li><strong>作者</strong>: Harshal D. Akolekar</li>
+<li><strong>发表日期</strong>: 2024-09-12</li>
+<li><strong>关键词</strong>: Gas Turbine, RANS, Data-Driven</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2409.07803" target="_blank">2409.07803</a> | <a href="https://arxiv.org/pdf/2409.07803" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Separated flow transition is a very popular phenomenon in gas turbines, especially low-pressure turbines (LPT). Low-fidelity simulations are often used for gas turbine design. However, they are unable to predict separated flow transition accurately. To improve the separated flow transition prediction for LPTs, the empirical relations that are derived for transition prediction need to be significantly modified. To achieve this, machine learning approaches are used to investigate a large number of functional forms using computational fluid dynamics-driven gene expression programming. These funct...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>30. Model-Based Reinforcement Learning for Control of Strongly-Disturbed Unsteady Aerodynamic Flows</h3>
+<ul>
+<li><strong>作者</strong>: Zhecheng Liu, Diederik Beckers, Jeff D. Eldredge</li>
+<li><strong>发表日期</strong>: 2024-08-26</li>
+<li><strong>关键词</strong>: CFD, RANS, Neural Network, Flow Field</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2408.14685" target="_blank">2408.14685</a> | <a href="https://arxiv.org/pdf/2408.14685" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>The intrinsic high dimension of fluid dynamics is an inherent challenge to control of aerodynamic flows, and this is further complicated by a flow's nonlinear response to strong disturbances. Deep reinforcement learning, which takes advantage of the exploratory aspects of reinforcement learning (RL) and the rich nonlinearity of a deep neural network, provides a promising approach to discover feasible control strategies. However, the typical model-free approach to reinforcement learning requires a significant amount of interaction between the flow environment and the RL agent during training, a...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>31. Implicit Neural Representation For Accurate CFD Flow Field Prediction</h3>
+<ul>
+<li><strong>作者</strong>: Laurent de Vito, Nils Pinnau, Simone Dey</li>
+<li><strong>发表日期</strong>: 2024-08-12</li>
+<li><strong>关键词</strong>: Compressor, Deep Learning, CFD, Data-Driven, Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2408.06486" target="_blank">2408.06486</a> | <a href="https://arxiv.org/pdf/2408.06486" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Despite the plethora of deep learning frameworks for flow field prediction, most of them deal with flow fields on regular domains, and although the best ones can cope with irregular domains, they mostly rely on graph networks, so that real industrial applications remain currently elusive. We present a deep learning framework for 3D flow field prediction applied to blades of aircraft engine turbines and compressors. Crucially, we view any 3D field as a function from coordinates that is modeled by a neural network we call the backbone-net. It inherits the property of coordinate-based MLPs, namel...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>32. Dynamical Mode Recognition of Coupled Flame Oscillators by Supervised and Unsupervised Learning Approaches</h3>
+<ul>
+<li><strong>作者</strong>: Weiming Xu, Tao Yang, Peng Zhang</li>
+<li><strong>发表日期</strong>: 2024-04-27</li>
+<li><strong>关键词</strong>: Gas Turbine, RANS, Combustion, Data-Driven</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2404.17801" target="_blank">2404.17801</a> | <a href="https://arxiv.org/pdf/2404.17801" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Combustion instability in gas turbines and rocket engines, as one of the most challenging problems in combustion research, arises from the complex interactions among flames, which are also influenced by chemical reactions, heat and mass transfer, and acoustics. Identifying and understanding combustion instability is essential to ensure the safe and reliable operation of many combustion systems, where exploring and classifying the dynamical behaviors of complex flame systems is a core take. To facilitate fundamental studies, the present work concerns dynamical mode recognition of coupled flame ...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>33. Forward Gradients for Data-Driven CFD Wall Modeling</h3>
+<ul>
+<li><strong>作者</strong>: Jan Hückelheim, Tadbhagya Kumar, Krishnan Raghavan, Pinaki Pal</li>
+<li><strong>发表日期</strong>: 2023-11-20</li>
+<li><strong>关键词</strong>: Gas Turbine, CFD, Data-Driven, Neural Network, Optimization</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2311.11876" target="_blank">2311.11876</a> | <a href="https://arxiv.org/pdf/2311.11876" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Computational Fluid Dynamics (CFD) is used in the design and optimization of gas turbines and many other industrial/ scientific applications. However, the practical use is often limited by the high computational cost, and the accurate resolution of near-wall flow is a significant contributor to this cost. Machine learning (ML) and other data-driven methods can complement existing wall models. Nevertheless, training these models is bottlenecked by the large computational effort and memory footprint demanded by back-propagation. Recent work has presented alternatives for computing gradients of n...</blockquote>
+</div>
+<h2>燃烧室机器学习（10 篇）</h2>
+<table><thead><tr><th>#</th><th>发表日期</th><th>Title</th><th>作者</th><th>关键词</th><th>论文链接</th><th>代码</th></tr></thead><tbody>
+<tr><td>34</td><td>2026-04-04</td><td><strong>Structurally Triggered Breakdown of the Phonon Gas Model in Crystalline Metal-Organic Frameworks</strong></td><td>Penghua Ying et al.</td><td>RANS</td><td><a href="https://arxiv.org/abs/2604.03783" target="_blank">2604.03783</a></td><td>无</td></tr>
+<tr><td>35</td><td>2026-04-01</td><td><strong>Beyond Beryllium: AI-Accelerated Materials Discovery for Interstellar Spacecraft Shielding</strong></td><td>Yue Li et al.</td><td>RANS, Neural Network</td><td><a href="https://arxiv.org/abs/2604.00571" target="_blank">2604.00571</a></td><td>无</td></tr>
+<tr><td>36</td><td>2026-03-27</td><td><strong>Physics-guided laminar flame speed correlation for methane-hydrogen-air mixtures with varying dilution</strong></td><td>Raik Hesse et al.</td><td>Combustion</td><td><a href="https://arxiv.org/abs/2603.26568" target="_blank">2603.26568</a></td><td>无</td></tr>
+<tr><td>37</td><td>2026-03-24</td><td><strong>A Residual-Attention Physics-Informed Neural Network for Irregular Interfaces and Multi-Peak Transport Fields</strong></td><td>Baitong Zhou et al.</td><td>PINN, Physics-Informed, Surrogate Model, RANS, Neural Network</td><td><a href="https://arxiv.org/abs/2603.22803" target="_blank">2603.22803</a></td><td>无</td></tr>
+<tr><td>38</td><td>2026-03-16</td><td><strong>PiGRAND: Physics-informed Graph Neural Diffusion for Intelligent Additive Manufacturing</strong></td><td>Benjamin Uhrich et al.</td><td>PINN, Physics-Informed, RANS, Data-Driven, Neural Network</td><td><a href="https://arxiv.org/abs/2603.15194" target="_blank">2603.15194</a></td><td>无</td></tr>
+<tr><td>39</td><td>2026-03-03</td><td><strong>Fingerprint Recognition of Partial Discharge Signals in Deep Learning Enhanced Rydberg Atomic Sensors</strong></td><td>Yi-Ming Yin et al.</td><td>Deep Learning, RANS, Data-Driven</td><td><a href="https://arxiv.org/abs/2603.02925" target="_blank">2603.02925</a></td><td>无</td></tr>
+<tr><td>40</td><td>2026-03-02</td><td><strong>Graph neural network force fields for adiabatic dynamics of lattice Hamiltonians</strong></td><td>Yunhao Fan et al.</td><td>RANS, Neural Network</td><td><a href="https://arxiv.org/abs/2603.02039" target="_blank">2603.02039</a></td><td>无</td></tr>
+<tr><td>41</td><td>2026-03-01</td><td><strong>Super-resolution of turbulent reacting flows on complex meshes using graph neural networks</strong></td><td>Priyabrat Dash et al.</td><td>Deep Learning, Combustion, Data-Driven, Neural Network</td><td><a href="https://arxiv.org/abs/2603.01080" target="_blank">2603.01080</a></td><td>无</td></tr>
+<tr><td>42</td><td>2026-02-24</td><td><strong>Machine Learning Modeling of Temperature-Dependent Optoelectronic Properties of Anharmonic Solid Solutions</strong></td><td>Pol Benítez et al.</td><td>Gas Turbine, Neural Network</td><td><a href="https://arxiv.org/abs/2602.20778" target="_blank">2602.20778</a></td><td>无</td></tr>
+<tr><td>43</td><td>2026-02-13</td><td><strong>Exploring Wetting and Optical Properties of CuAg Alloys via Surface Texture Morphology Analysis</strong></td><td>Krzysztof Wieczerzak et al.</td><td>Gas Turbine, Neural Network</td><td><a href="https://arxiv.org/abs/2602.12848" target="_blank">2602.12848</a></td><td>无</td></tr>
+</tbody></table>
+<div class="paper-detail">
+<h3>34. Structurally Triggered Breakdown of the Phonon Gas Model in Crystalline Metal-Organic Frameworks</h3>
+<ul>
+<li><strong>作者</strong>: Penghua Ying, Ting Liang, Yun Chen, Yan Chen, Shiyun Xiong et al.</li>
+<li><strong>发表日期</strong>: 2026-04-04</li>
+<li><strong>关键词</strong>: RANS</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2604.03783" target="_blank">2604.03783</a> | <a href="https://arxiv.org/pdf/2604.03783" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>While crystalline materials with glass-like thermal conductivity are fundamentally intriguing, structurally triggering the transition from propagating to diffusive heat transport within a single framework remains a formidable challenge. Here, using extensive machine learning molecular dynamics, we demonstrate a fundamental thermal transport crossover in metal-organic frameworks. We reveal that grafting flexible side chains onto a pristine MOF backbone acts as a structural switch, strongly reducing the thermal conductivity by $\sim$70% (from $\sim 0.7$ to $\sim 0.2\ \text{W m}^{-1}\text{K}^{-1}...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>35. Beyond Beryllium: AI-Accelerated Materials Discovery for Interstellar Spacecraft Shielding</h3>
+<ul>
+<li><strong>作者</strong>: Yue Li, Xu Pan, Kaiyuan Guo</li>
+<li><strong>发表日期</strong>: 2026-04-01</li>
+<li><strong>关键词</strong>: RANS, Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2604.00571" target="_blank">2604.00571</a> | <a href="https://arxiv.org/pdf/2604.00571" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Project Daedalus (1973--1978), the most detailed interstellar probe design study ever conducted, specified a 9 mm beryllium erosion shield to protect the spacecraft payload during its 5.9 light-year cruise to Barnard's Star at 12% of the speed of light. This design, however, predated both the isolation of two-dimensional materials and the development of graph neural network (GNN) property predictors. Here, we systematically screen 20 candidate materials--spanning conventional aerospace metals, transition metal dichalcogenides, and ultra-high-temperature ceramics--using density functional theor...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>36. Physics-guided laminar flame speed correlation for methane-hydrogen-air mixtures with varying dilution</h3>
+<ul>
+<li><strong>作者</strong>: Raik Hesse, Christian Schwenzer, Roman Glaznev, Florence Cameron, Heinz Pitsch et al.</li>
+<li><strong>发表日期</strong>: 2026-03-27</li>
+<li><strong>关键词</strong>: Combustion</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2603.26568" target="_blank">2603.26568</a> | <a href="https://arxiv.org/pdf/2603.26568" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Fuel-flexible, low-carbon combustion systems need to accommodate methane/hydrogen mixtures with air and exhaust-gas dilution. To develop these, we require accurate and efficient correlations for laminar flame speed (LFS). In this work, we introduce a physics-guided LFS correlation that applies to burners, gas engines, and turbines. Our model uses a core-kinetic approach based on flame temperatures, an algebraic function for the equivalence ratio, and a mass-flux-based blending law. This allows for accurate predictions with any methane/hydrogen blend. We set the model parameters using one-dimen...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>37. A Residual-Attention Physics-Informed Neural Network for Irregular Interfaces and Multi-Peak Transport Fields</h3>
+<ul>
+<li><strong>作者</strong>: Baitong Zhou, Ze Tao, Fujun Liu, Xuan Fang</li>
+<li><strong>发表日期</strong>: 2026-03-24</li>
+<li><strong>关键词</strong>: PINN, Physics-Informed, Surrogate Model, RANS, Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2603.22803" target="_blank">2603.22803</a> | <a href="https://arxiv.org/pdf/2603.22803" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>In complex engineering systems such as electro-thermal-fluid coupling, rapid and accurate prediction of multi-physics fields is essential for advanced applications like digital twins and real-time condition monitoring. Traditional numerical methods often suffer from high computational latency, whereas standard Physics-Informed Neural Networks (PINNs) frequently fail to capture critical local features, such as irregular interfaces, localized high-gradient regions, and multi-peak transport structures. To address these limitations and provide high-fidelity intelligent predictions for engineering ...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>38. PiGRAND: Physics-informed Graph Neural Diffusion for Intelligent Additive Manufacturing</h3>
+<ul>
+<li><strong>作者</strong>: Benjamin Uhrich, Tim Häntschel, Erhard Rahm</li>
+<li><strong>发表日期</strong>: 2026-03-16</li>
+<li><strong>关键词</strong>: PINN, Physics-Informed, RANS, Data-Driven, Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2603.15194" target="_blank">2603.15194</a> | <a href="https://arxiv.org/pdf/2603.15194" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>A comprehensive understanding of heat transport is essential for optimizing various mechanical and engineering applications, including 3D printing. Recent advances in machine learning, combined with physics-based models, have enabled a powerful fusion of numerical methods and data-driven algorithms. This progress is driven by the availability of limited sensor data in various engineering and scientific domains, where the cost of data collection and the inaccessibility of certain measurements are high. To this end, we present PiGRAND, a Physics-informed graph neural diffusion framework. In orde...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>39. Fingerprint Recognition of Partial Discharge Signals in Deep Learning Enhanced Rydberg Atomic Sensors</h3>
+<ul>
+<li><strong>作者</strong>: Yi-Ming Yin, Qi-Feng Wang, Yu Ma, Tian-Yu Han, Jia-Dou Nan et al.</li>
+<li><strong>发表日期</strong>: 2026-03-03</li>
+<li><strong>关键词</strong>: Deep Learning, RANS, Data-Driven</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2603.02925" target="_blank">2603.02925</a> | <a href="https://arxiv.org/pdf/2603.02925" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Partial discharge originates from microscopic insulation imperfections in high-voltage apparatus and is widely considered a critical marker of incipient deterioration. Conventional partial discharge detection methods are typically constrained by limited bandwidth and often rely on predefined feature extraction, which impedes reliable recognition of broadband transient signals. In this work, we employ a Rydberg atomic sensor to directly capture time-domain responses of partial discharge emissions and construct distinctive spectral fingerprints for different types. A 1D ResNet deep learning mode...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>40. Graph neural network force fields for adiabatic dynamics of lattice Hamiltonians</h3>
+<ul>
+<li><strong>作者</strong>: Yunhao Fan, Gia-Wei Chern</li>
+<li><strong>发表日期</strong>: 2026-03-02</li>
+<li><strong>关键词</strong>: RANS, Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2603.02039" target="_blank">2603.02039</a> | <a href="https://arxiv.org/pdf/2603.02039" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Scalable and symmetry-consistent force-field models are essential for extending quantum-accurate simulations to large spatiotemporal scales. While descriptor-based neural networks can incorporate lattice symmetries through carefully engineered features, we show that graph neural networks (GNNs) provide a conceptually simpler and more unified alternative in which discrete lattice translation and point-group symmetries are enforced directly through local message passing and weight sharing. We develop a GNN-based force-field framework for the adiabatic dynamics of lattice Hamiltonians and demonst...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>41. Super-resolution of turbulent reacting flows on complex meshes using graph neural networks</h3>
+<ul>
+<li><strong>作者</strong>: Priyabrat Dash, Konduri Aditya, Christos E. Frouzakis, Mathis Bode</li>
+<li><strong>发表日期</strong>: 2026-03-01</li>
+<li><strong>关键词</strong>: Deep Learning, Combustion, Data-Driven, Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2603.01080" target="_blank">2603.01080</a> | <a href="https://arxiv.org/pdf/2603.01080" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>State-of-the-art deep learning models have been extensively utilized to reconstruct small-scale structures from coarse-grained data in turbulent flows. However, their application has predominantly been restricted to structured uniform meshes, limiting their applicability to data associated with complex geometries that are typically simulated on structured non-uniform or unstructured meshes. Machine learning (ML) models based on graph neural networks (GNNs), known for their ability to process unstructured data, offer a promising alternative. In this study, we leverage the inherent flexibility o...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>42. Machine Learning Modeling of Temperature-Dependent Optoelectronic Properties of Anharmonic Solid Solutions</h3>
+<ul>
+<li><strong>作者</strong>: Pol Benítez, Cibrán López, Edgardo Saucedo, Claudio Cazorla</li>
+<li><strong>发表日期</strong>: 2026-02-24</li>
+<li><strong>关键词</strong>: Gas Turbine, Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2602.20778" target="_blank">2602.20778</a> | <a href="https://arxiv.org/pdf/2602.20778" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Leveraging strong optoelectronic responses to external stimuli, such as temperature and electric fields, is central to the development of advanced photonic technologies, including adaptive photodetectors and reconfigurable photovoltaic devices. However, only a limited number of semiconducting materials, typically characterized by strong electron-phonon coupling, are known to exhibit such pronounced responsiveness, and their equilibrium optoelectronic properties are often not optimally suited for targeted applications. Chemical engineering strategies, such as doping and solid-solution mixing, a...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>43. Exploring Wetting and Optical Properties of CuAg Alloys via Surface Texture Morphology Analysis</h3>
+<ul>
+<li><strong>作者</strong>: Krzysztof Wieczerzak, Grzegorz Cios, Piotr Bała, Johann Michler, Benedykt R. Jany</li>
+<li><strong>发表日期</strong>: 2026-02-13</li>
+<li><strong>关键词</strong>: Gas Turbine, Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2602.12848" target="_blank">2602.12848</a> | <a href="https://arxiv.org/pdf/2602.12848" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Copper-silver (CuAg) alloys are increasingly explored for applications in high-performance electrical and electronic systems, owing to their unique combination of high electrical and thermal conductivity and enhanced mechanical strength. Nevertheless, a thorough understanding of how these alloys surface characteristics fundamentally influence properties remains largely underdeveloped. Here, we explored the complex interplay between surface texture morphology, layer composition, wetting, and optical properties of Cu, Ag, and CuAg thin films deposited on textured silicon substrates via magnetron...</blockquote>
+</div>
+<h2>健康监测与故障诊断（8 篇）</h2>
+<table><thead><tr><th>#</th><th>发表日期</th><th>Title</th><th>作者</th><th>关键词</th><th>论文链接</th><th>代码</th></tr></thead><tbody>
+<tr><td>44</td><td>2025-04-29</td><td><strong>Hybrid quantum recurrent neural network for remaining useful life prediction</strong></td><td>Olga Tsurkan et al.</td><td>RANS, Neural Network, Remaining Useful Life</td><td><a href="https://arxiv.org/abs/2504.20823" target="_blank">2504.20823</a></td><td>无</td></tr>
+<tr><td>45</td><td>2025-02-07</td><td><strong>Using Federated Machine Learning in Predictive Maintenance of Jet Engines</strong></td><td>Asaph Matheus Barbosa et al.</td><td>Remaining Useful Life</td><td><a href="https://arxiv.org/abs/2502.05321" target="_blank">2502.05321</a></td><td>无</td></tr>
+<tr><td>46</td><td>2023-09-21</td><td><strong>Ensemble Neural Networks for Remaining Useful Life (RUL) Prediction</strong></td><td>Ahbishek Srinivasan et al.</td><td>Data-Driven, Neural Network, Remaining Useful Life</td><td><a href="https://arxiv.org/abs/2309.12445" target="_blank">2309.12445</a></td><td>无</td></tr>
+<tr><td>47</td><td>2022-09-19</td><td><strong>Application of Neural Network in the Prediction of NOx Emissions from Degrading Gas Turbine</strong></td><td>Zhenkun Zheng et al.</td><td>Gas Turbine, Neural Network</td><td><a href="https://arxiv.org/abs/2209.09168" target="_blank">2209.09168</a></td><td>无</td></tr>
+<tr><td>48</td><td>2021-10-17</td><td><strong>On-board Fault Diagnosis of a Laboratory Mini SR-30 Gas Turbine Engine</strong></td><td>Richa Singh et al.</td><td>Gas Turbine, Fault Diagnosis, Data-Driven</td><td><a href="https://arxiv.org/abs/2110.08820" target="_blank">2110.08820</a></td><td>无</td></tr>
+<tr><td>49</td><td>2021-08-13</td><td><strong>A reduced-order modeling framework for simulating signatures of faults in a bladed disk</strong></td><td>Divya Shyam Singh et al.</td><td>Turbomachinery, Health Monitoring, Data-Driven</td><td><a href="https://arxiv.org/abs/2108.06265" target="_blank">2108.06265</a></td><td>无</td></tr>
+<tr><td>50</td><td>2021-02-17</td><td><strong>Genetically Optimized Prediction of Remaining Useful Life</strong></td><td>Shaashwat Agrawal et al.</td><td>Deep Learning, Neural Network, Optimization, Remaining Useful Life</td><td><a href="https://arxiv.org/abs/2102.08845" target="_blank">2102.08845</a></td><td>无</td></tr>
+<tr><td>51</td><td>2019-08-25</td><td><strong>On Accurate and Reliable Anomaly Detection for Gas Turbine Combustors: A Deep Learning Approach</strong></td><td>Weizhong Yan et al.</td><td>Gas Turbine, Deep Learning, Combustion, Neural Network, Anomaly Detection</td><td><a href="https://arxiv.org/abs/1908.09238" target="_blank">1908.09238</a></td><td>无</td></tr>
+</tbody></table>
+<div class="paper-detail">
+<h3>44. Hybrid quantum recurrent neural network for remaining useful life prediction</h3>
+<ul>
+<li><strong>作者</strong>: Olga Tsurkan, Aleksandra Konstantinova, Aleksandr Sedykh, Arsenii Senokosov, Daniil Tarpanov et al.</li>
+<li><strong>发表日期</strong>: 2025-04-29</li>
+<li><strong>关键词</strong>: RANS, Neural Network, Remaining Useful Life</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2504.20823" target="_blank">2504.20823</a> | <a href="https://arxiv.org/pdf/2504.20823" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Predictive maintenance in aerospace heavily relies on accurate estimation of the remaining useful life of jet engines. In this paper, we introduce a Hybrid Quantum Recurrent Neural Network framework, combining Quantum Long Short-Term Memory layers with classical dense layers for Remaining Useful Life forecasting on NASA's Commercial Modular Aero-Propulsion System Simulation dataset. Each Quantum Long Short-Term Memory gate replaces conventional linear transformations with Quantum Depth-Infused circuits, allowing the network to learn high-frequency components more effectively. Experimental resu...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>45. Using Federated Machine Learning in Predictive Maintenance of Jet Engines</h3>
+<ul>
+<li><strong>作者</strong>: Asaph Matheus Barbosa, Thao Vy Nhat Ngo, Elaheh Jafarigol, Theodore B. Trafalis, Emuobosa P. Ojoboh</li>
+<li><strong>发表日期</strong>: 2025-02-07</li>
+<li><strong>关键词</strong>: Remaining Useful Life</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2502.05321" target="_blank">2502.05321</a> | <a href="https://arxiv.org/pdf/2502.05321" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>The goal of this paper is to predict the Remaining Useful Life (RUL) of turbine jet engines using a federated machine learning framework. Federated Learning enables multiple edge devices/nodes or servers to collaboratively train a shared model without sharing sensitive data, thus preserving data privacy and security. By implementing a nonlinear model, the system aims to capture complex relationships and patterns in the engine data to enhance the accuracy of RUL predictions. This approach leverages decentralized computation, allowing models to be trained locally at each device before aggregatin...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>46. Ensemble Neural Networks for Remaining Useful Life (RUL) Prediction</h3>
+<ul>
+<li><strong>作者</strong>: Ahbishek Srinivasan, Juan Carlos Andresen, Anders Holst</li>
+<li><strong>发表日期</strong>: 2023-09-21</li>
+<li><strong>关键词</strong>: Data-Driven, Neural Network, Remaining Useful Life</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2309.12445" target="_blank">2309.12445</a> | <a href="https://arxiv.org/pdf/2309.12445" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>A core part of maintenance planning is a monitoring system that provides a good prognosis on health and degradation, often expressed as remaining useful life (RUL). Most of the current data-driven approaches for RUL prediction focus on single-point prediction. These point prediction approaches do not include the probabilistic nature of the failure. The few probabilistic approaches to date either include the aleatoric uncertainty (which originates from the system), or the epistemic uncertainty (which originates from the model parameters), or both simultaneously as a total uncertainty. Here, we ...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>47. Application of Neural Network in the Prediction of NOx Emissions from Degrading Gas Turbine</h3>
+<ul>
+<li><strong>作者</strong>: Zhenkun Zheng, Alan Rezazadeh</li>
+<li><strong>发表日期</strong>: 2022-09-19</li>
+<li><strong>关键词</strong>: Gas Turbine, Neural Network</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2209.09168" target="_blank">2209.09168</a> | <a href="https://arxiv.org/pdf/2209.09168" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>This paper is aiming to apply neural network algorithm for predicting the process response (NOx emissions) from degrading natural gas turbines. Nine different process variables, or predictors, are considered in the predictive modelling. It is found out that the model trained by neural network algorithm should use part of recent data in the training and validation sets accounting for the impact of the system degradation. R-Square values of the training and validation sets demonstrate the validity of the model. The residue plot, without any clear pattern, shows the model is appropriate. The rank...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>48. On-board Fault Diagnosis of a Laboratory Mini SR-30 Gas Turbine Engine</h3>
+<ul>
+<li><strong>作者</strong>: Richa Singh</li>
+<li><strong>发表日期</strong>: 2021-10-17</li>
+<li><strong>关键词</strong>: Gas Turbine, Fault Diagnosis, Data-Driven</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2110.08820" target="_blank">2110.08820</a> | <a href="https://arxiv.org/pdf/2110.08820" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Inspired by recent progress in machine learning, a data-driven fault diagnosis and isolation (FDI) scheme is explicitly developed for failure in the fuel supply system and sensor measurements of the laboratory gas turbine system. A passive approach of fault diagnosis is implemented where a model is trained using machine learning classifiers to detect a given set of fault scenarios in real-time on which it is trained. Towards the end, a comparative study is presented for well-known classification techniques, namely Support vector classifier, linear discriminant analysis, K-neighbor, and decisio...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>49. A reduced-order modeling framework for simulating signatures of faults in a bladed disk</h3>
+<ul>
+<li><strong>作者</strong>: Divya Shyam Singh, Atul Agrawal, D. Roy Mahapatra</li>
+<li><strong>发表日期</strong>: 2021-08-13</li>
+<li><strong>关键词</strong>: Turbomachinery, Health Monitoring, Data-Driven</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2108.06265" target="_blank">2108.06265</a> | <a href="https://arxiv.org/pdf/2108.06265" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>This paper reports a reduced-order modeling framework of bladed disks on a rotating shaft to simulate the vibration signature of faults like cracks in different components aiming towards simulated data-driven machine learning. We have employed lumped and one-dimensional analytical models of the subcomponents for better insight into the complex dynamic response. The framework seeks to address some of the challenges encountered in analyzing and optimizing fault detection and identification schemes for health monitoring of rotating turbomachinery, including aero-engines. We model the bladed disks...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>50. Genetically Optimized Prediction of Remaining Useful Life</h3>
+<ul>
+<li><strong>作者</strong>: Shaashwat Agrawal, Sagnik Sarkar, Gautam Srivastava, Praveen Kumar Reddy Maddikunta, Thippa Reddy Gadekallu</li>
+<li><strong>发表日期</strong>: 2021-02-17</li>
+<li><strong>关键词</strong>: Deep Learning, Neural Network, Optimization, Remaining Useful Life</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/2102.08845" target="_blank">2102.08845</a> | <a href="https://arxiv.org/pdf/2102.08845" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>The application of remaining useful life (RUL) prediction has taken great importance in terms of energy optimization, cost-effectiveness, and risk mitigation. The existing RUL prediction algorithms mostly constitute deep learning frameworks. In this paper, we implement LSTM and GRU models and compare the obtained results with a proposed genetically trained neural network. The current models solely depend on Adam and SGD for optimization and learning. Although the models have worked well with these optimizers, even little uncertainties in prognostics prediction can result in huge losses. We hop...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>51. On Accurate and Reliable Anomaly Detection for Gas Turbine Combustors: A Deep Learning Approach</h3>
+<ul>
+<li><strong>作者</strong>: Weizhong Yan, Lijie Yu</li>
+<li><strong>发表日期</strong>: 2019-08-25</li>
+<li><strong>关键词</strong>: Gas Turbine, Deep Learning, Combustion, Neural Network, Anomaly Detection</li>
+<li><strong>论文链接</strong>: <a href="https://arxiv.org/abs/1908.09238" target="_blank">1908.09238</a> | <a href="https://arxiv.org/pdf/1908.09238" target="_blank">PDF</a></li>
+<li><strong>代码</strong>: 无</li>
+</ul>
+<blockquote>Monitoring gas turbine combustors health, in particular, early detecting abnormal behaviors and incipient faults, is critical in ensuring gas turbines operating efficiently and in preventing costly unplanned maintenance. One popular means of detecting combustor abnormalities is through continuously monitoring exhaust gas temperature profiles. Over the years many anomaly detection technologies have been explored for detecting combustor faults, however, the performance (detection rate) of anomaly detection solutions fielded is still inadequate. Advanced technologies that can improve detection pe...</blockquote>
+</div>
+
+</div>
+
+<div id="section-en">
+<h2>Gas Turbine Machine Learning — Daily Paper Tracker</h2>
+<p class="subtitle">Total: 51 papers, 6 categories | Tracking PINN & Deep Learning for Gas Turbines and Turbomachinery</p>
+<h2>PINN for Gas Turbines & Turbomachinery（3 papers）</h2>
+<table><thead><tr><th>#</th><th>Date</th><th>Title</th><th>Authors</th><th>Keywords</th><th>Paper</th><th>Code</th></tr></thead><tbody>
+<tr><td>1</td><td>2026-03-08</td><td><strong>Meta-PINNs: Meta-Learning Enhanced Physics-Informed Machine Learning Framework for Turbomachinery Flow Predictions under Varying Operation Conditions</strong></td><td>Yuling Han et al.</td><td>PINN, Physics-Informed, Turbomachinery, Compressor, Neural Network</td><td><a href="https://arxiv.org/abs/2603.07740" target="_blank">2603.07740</a></td><td>N/A</td></tr>
+<tr><td>2</td><td>2025-06-24</td><td><strong>Physics-Informed Neural Networks for Industrial Gas Turbines: Recent Trends, Advancements and Challenges</strong></td><td>Afila Ajithkumar Sophiya et al.</td><td>PINN, Physics-Informed, Gas Turbine, Deep Learning, Neural Network</td><td><a href="https://arxiv.org/abs/2506.19503" target="_blank">2506.19503</a></td><td>N/A</td></tr>
+<tr><td>3</td><td>2023-07-15</td><td><strong>Investigation of Compressor Cascade Flow Using Physics- Informed Neural Networks with Adaptive Learning Strategy</strong></td><td>Zhihui Li et al.</td><td>PINN, Turbomachinery, Compressor, CFD, Neural Network</td><td><a href="https://arxiv.org/abs/2308.04501" target="_blank">2308.04501</a></td><td>N/A</td></tr>
+</tbody></table>
+<div class="paper-detail">
+<h3>1. Meta-PINNs: Meta-Learning Enhanced Physics-Informed Machine Learning Framework for Turbomachinery Flow Predictions under Varying Operation Conditions</h3>
+<ul>
+<li><strong>Authors</strong>: Yuling Han, Zhihui Li, Zhibin Yu</li>
+<li><strong>Date</strong>: 2026-03-08</li>
+<li><strong>Keywords</strong>: PINN, Physics-Informed, Turbomachinery, Compressor, Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2603.07740" target="_blank">2603.07740</a> | <a href="https://arxiv.org/pdf/2603.07740" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Coupling physics with machine learning models has shown great potential for solving fluid dynamics problems governed by partial differential equations. However, conventional methods, such as physics-informed neural networks, often suffer from slow convergence, unstable training, and limited generalization across different flow conditions. To overcome these challenges, this study proposes a novel meta-learning en- hanced physics-informed neural networks (Meta-PINNs) framework, which integrates a meta-optimization strategy into the training process. The approach allows the model to automatically...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>2. Physics-Informed Neural Networks for Industrial Gas Turbines: Recent Trends, Advancements and Challenges</h3>
+<ul>
+<li><strong>Authors</strong>: Afila Ajithkumar Sophiya, Sepehr Maleki, Giuseppe Bruni, Senthil K. Krishnababu</li>
+<li><strong>Date</strong>: 2025-06-24</li>
+<li><strong>Keywords</strong>: PINN, Physics-Informed, Gas Turbine, Deep Learning, Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2506.19503" target="_blank">2506.19503</a> | <a href="https://arxiv.org/pdf/2506.19503" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Physics-Informed Neural Networks (PINNs) have emerged as a promising computational framework for solving differential equations by integrating deep learning with physical constraints. However, their application in gas turbines is still in its early stages, requiring further refinement and standardization for wider adoption. This survey provides a comprehensive review of PINNs in Industrial Gas Turbines (IGTs) research, highlighting their contributions to the analysis of aerodynamic and aeromechanical phenomena, as well as their applications in flow field reconstruction, fatigue evaluation, and...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>3. Investigation of Compressor Cascade Flow Using Physics- Informed Neural Networks with Adaptive Learning Strategy</h3>
+<ul>
+<li><strong>Authors</strong>: Zhihui Li, Francesco Montomoli, Sanjiv Sharma</li>
+<li><strong>Date</strong>: 2023-07-15</li>
+<li><strong>Keywords</strong>: PINN, Turbomachinery, Compressor, CFD, Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2308.04501" target="_blank">2308.04501</a> | <a href="https://arxiv.org/pdf/2308.04501" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>In this study, we utilize the emerging Physics Informed Neural Networks (PINNs) approach for the first time to predict the flow field of a compressor cascade. Different from conventional training methods, a new adaptive learning strategy that mitigates gradient imbalance through incorporating adaptive weights in conjunction with dynamically adjusting learning rate is used during the training process to improve the convergence of PINNs. The performance of PINNs is assessed here by solving both the forward and inverse problems. In the forward problem, by encapsulating the physical relations amon...</blockquote>
+</div>
+<h2>Surrogate Models for Gas Turbine Performance（10 papers）</h2>
+<table><thead><tr><th>#</th><th>Date</th><th>Title</th><th>Authors</th><th>Keywords</th><th>Paper</th><th>Code</th></tr></thead><tbody>
+<tr><td>4</td><td>2026-03-16</td><td><strong>Generative Inverse Design with Abstention via Diagonal Flow Matching</strong></td><td>Miguel de Campos et al.</td><td>Gas Turbine, Neural Network</td><td><a href="https://arxiv.org/abs/2603.15925" target="_blank">2603.15925</a></td><td>N/A</td></tr>
+<tr><td>5</td><td>2026-02-14</td><td><strong>Data-driven Bi-level Optimization of Thermal Power Systems with embedded Artificial Neural Networks</strong></td><td>Talha Ansar et al.</td><td>Gas Turbine, Data-Driven, Neural Network, Optimization</td><td><a href="https://arxiv.org/abs/2602.13746" target="_blank">2602.13746</a></td><td>N/A</td></tr>
+<tr><td>6</td><td>2026-01-30</td><td><strong>How well do generative models solve inverse problems? A benchmark study</strong></td><td>Patrick Krüger et al.</td><td>Gas Turbine, Neural Network</td><td><a href="https://arxiv.org/abs/2601.23238" target="_blank">2601.23238</a></td><td>N/A</td></tr>
+<tr><td>7</td><td>2025-07-11</td><td><strong>Domain-Informed Operation Excellence of Gas Turbine System with Machine Learning</strong></td><td>Waqar Muhammad Ashraf et al.</td><td>Gas Turbine, Data-Driven, Optimization</td><td><a href="https://arxiv.org/abs/2507.08697" target="_blank">2507.08697</a></td><td>N/A</td></tr>
+<tr><td>8</td><td>2025-06-16</td><td><strong>Condition Monitoring with Machine Learning: A Data-Driven Framework for Quantifying Wind Turbine Energy Loss</strong></td><td>Emil Marcus Buchberg et al.</td><td>Turbine Blade, Data-Driven, Anomaly Detection</td><td><a href="https://arxiv.org/abs/2506.13012" target="_blank">2506.13012</a></td><td><a href="https://github.com/EmilBuch/Condition-Monitoring-with-Machine-Learning" target="_blank">Code</a></td></tr>
+<tr><td>9</td><td>2025-04-06</td><td><strong>A model agnostic eXplainable AI based fuzzy framework for sensor constrained Aerospace maintenance applications</strong></td><td>Bharadwaj Dogga et al.</td><td>Gas Turbine</td><td><a href="https://arxiv.org/abs/2504.04541" target="_blank">2504.04541</a></td><td>N/A</td></tr>
+<tr><td>10</td><td>2025-03-25</td><td><strong>Estimation of the Acoustic Field in a Uniform Duct with Mean Flow using Neural Networks</strong></td><td>D. Veerababu et al.</td><td>Gas Turbine, Neural Network, Optimization</td><td><a href="https://arxiv.org/abs/2503.19412" target="_blank">2503.19412</a></td><td>N/A</td></tr>
+<tr><td>11</td><td>2025-03-18</td><td><strong>C(NN)FD -- Deep Learning Modelling of Multi-Stage Axial Compressors Aerodynamics</strong></td><td>Giuseppe Bruni et al.</td><td>Gas Turbine, Turbomachinery, Compressor, Deep Learning, CFD</td><td><a href="https://arxiv.org/abs/2503.14369" target="_blank">2503.14369</a></td><td>N/A</td></tr>
+<tr><td>12</td><td>2025-03-17</td><td><strong>Dynamical Mode Recognition of Turbulent Flames in a Swirl-stabilized Annular Combustor by a Time-series Learning Approach</strong></td><td>Tao Yang et al.</td><td>Gas Turbine, RANS, Combustion, Neural Network</td><td><a href="https://arxiv.org/abs/2503.13559" target="_blank">2503.13559</a></td><td>N/A</td></tr>
+<tr><td>13</td><td>2025-02-19</td><td><strong>A Supervised Machine-Learning Approach For Turboshaft Engine Dynamic Modeling Under Real Flight Conditions</strong></td><td>Damiano Paniccia et al.</td><td>RANS, Data-Driven, Neural Network</td><td><a href="https://arxiv.org/abs/2502.14120" target="_blank">2502.14120</a></td><td>N/A</td></tr>
+</tbody></table>
+<div class="paper-detail">
+<h3>4. Generative Inverse Design with Abstention via Diagonal Flow Matching</h3>
+<ul>
+<li><strong>Authors</strong>: Miguel de Campos, Werner Krebs, Hanno Gottschalk</li>
+<li><strong>Date</strong>: 2026-03-16</li>
+<li><strong>Keywords</strong>: Gas Turbine, Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2603.15925" target="_blank">2603.15925</a> | <a href="https://arxiv.org/pdf/2603.15925" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Inverse design aims to find design parameters $x$ achieving target performance $y^*$. Generative approaches learn bidirectional mappings between designs and labels, enabling diverse solution sampling. However, standard conditional flow matching (CFM), when adapted to inverse problems by pairing labels with design parameters, exhibits strong sensitivity to their arbitrary ordering and scaling, leading to unstable training. We introduce Diagonal Flow Matching (Diag-CFM), which resolves this through a zero-anchoring strategy that pairs design coordinates with noise and labels with zero, making th...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>5. Data-driven Bi-level Optimization of Thermal Power Systems with embedded Artificial Neural Networks</h3>
+<ul>
+<li><strong>Authors</strong>: Talha Ansar, Muhammad Mujtaba Abbas, Ramit Debnath, Vivek Dua, Waqar Muhammad Ashraf</li>
+<li><strong>Date</strong>: 2026-02-14</li>
+<li><strong>Keywords</strong>: Gas Turbine, Data-Driven, Neural Network, Optimization</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2602.13746" target="_blank">2602.13746</a> | <a href="https://arxiv.org/pdf/2602.13746" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Industrial thermal power systems have coupled performance variables with hierarchical order of importance, making their simultaneous optimization computationally challenging or infeasible. This barrier limits the integrated and computationally scaleable operation optimization of industrial thermal power systems. To address this issue for large-scale engineering systems, we present a fully machine learning-powered bi-level optimization framework for data-driven optimization of industrial thermal power systems. The objective functions of upper and lower levels are approximated by artificial neur...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>6. How well do generative models solve inverse problems? A benchmark study</h3>
+<ul>
+<li><strong>Authors</strong>: Patrick Krüger, Patrick Materne, Werner Krebs, Hanno Gottschalk</li>
+<li><strong>Date</strong>: 2026-01-30</li>
+<li><strong>Keywords</strong>: Gas Turbine, Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2601.23238" target="_blank">2601.23238</a> | <a href="https://arxiv.org/pdf/2601.23238" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Generative learning generates high dimensional data based on low dimensional conditions, also called prompts. Therefore, generative learning algorithms are eligible for solving (Bayesian) inverse problems. In this article we compare a traditional Bayesian inverse approach based on a forward regression model and a prior sampled with the Markov Chain Monte Carlo method with three state of the art generative learning models, namely conditional Generative Adversarial Networks, Invertible Neural Networks and Conditional Flow Matching. We apply them to a problem of gas turbine combustor design where...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>7. Domain-Informed Operation Excellence of Gas Turbine System with Machine Learning</h3>
+<ul>
+<li><strong>Authors</strong>: Waqar Muhammad Ashraf, Amir H. Keshavarzzadeh, Abdulelah S. Alshehri, Abdulrahman bin Jumah, Ramit Debnath et al.</li>
+<li><strong>Date</strong>: 2025-07-11</li>
+<li><strong>Keywords</strong>: Gas Turbine, Data-Driven, Optimization</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2507.08697" target="_blank">2507.08697</a> | <a href="https://arxiv.org/pdf/2507.08697" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>The domain-consistent adoption of artificial intelligence (AI) remains low in thermal power plants due to the black-box nature of AI algorithms and low representation of domain knowledge in conventional data-centric analytics. In this paper, we develop a MAhalanobis Distance-based OPTimization (MAD-OPT) framework that incorporates the Mahalanobis distance-based constraint to introduce domain knowledge into data-centric analytics. The developed MAD-OPT framework is applied to maximize thermal efficiency and minimize turbine heat rate for a 395 MW capacity gas turbine system. We demonstrate that...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>8. Condition Monitoring with Machine Learning: A Data-Driven Framework for Quantifying Wind Turbine Energy Loss</h3>
+<ul>
+<li><strong>Authors</strong>: Emil Marcus Buchberg, Kent Vugs Nielsen</li>
+<li><strong>Date</strong>: 2025-06-16</li>
+<li><strong>Keywords</strong>: Turbine Blade, Data-Driven, Anomaly Detection</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2506.13012" target="_blank">2506.13012</a> | <a href="https://arxiv.org/pdf/2506.13012" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: <a href="https://github.com/EmilBuch/Condition-Monitoring-with-Machine-Learning" target="_blank">Code</a></li>
+</ul>
+<blockquote>Wind energy significantly contributes to the global shift towards renewable energy, yet operational challenges, such as Leading-Edge Erosion on wind turbine blades, notably reduce energy output. This study introduces an advanced, scalable machine learning framework for condition monitoring of wind turbines, specifically targeting improved detection of anomalies using Supervisory Control and Data Acquisition data. The framework effectively isolates normal turbine behavior through rigorous preprocessing, incorporating domain-specific rules and anomaly detection filters, including Gaussian Mixtur...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>9. A model agnostic eXplainable AI based fuzzy framework for sensor constrained Aerospace maintenance applications</h3>
+<ul>
+<li><strong>Authors</strong>: Bharadwaj Dogga, Anoop Sathyan, Kelly Cohen</li>
+<li><strong>Date</strong>: 2025-04-06</li>
+<li><strong>Keywords</strong>: Gas Turbine</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2504.04541" target="_blank">2504.04541</a> | <a href="https://arxiv.org/pdf/2504.04541" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Machine Learning methods have extensively evolved to support industrial big data methods and their corresponding need in gas turbine maintenance and prognostics. However, most unsupervised methods need extensively labeled data to perform predictions across many dimensions. The cutting edge of small and medium applications do not necessarily maintain operational sensors and data acquisition with rising costs and diminishing profits. We propose a framework to make sensor maintenance priority decisions using a combination of SHAP, UMAP, Fuzzy C-means clustering. An aerospace jet engine dataset is...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>10. Estimation of the Acoustic Field in a Uniform Duct with Mean Flow using Neural Networks</h3>
+<ul>
+<li><strong>Authors</strong>: D. Veerababu, Prasanta K. Ghosh</li>
+<li><strong>Date</strong>: 2025-03-25</li>
+<li><strong>Keywords</strong>: Gas Turbine, Neural Network, Optimization</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2503.19412" target="_blank">2503.19412</a> | <a href="https://arxiv.org/pdf/2503.19412" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>The study of sound propagation in a uniform duct having a mean flow has many applications, such as in the design of gas turbines, heating, ventilation and air conditioning ducts, automotive intake and exhaust systems, and in the modeling of speech. In this paper, the convective effects of the mean flow on the plane wave acoustic field inside a uniform duct were studied using artificial neural networks. The governing differential equation and the associated boundary conditions form a constrained optimization problem. It is converted to an unconstrained optimization problem and solved by approxi...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>11. C(NN)FD -- Deep Learning Modelling of Multi-Stage Axial Compressors Aerodynamics</h3>
+<ul>
+<li><strong>Authors</strong>: Giuseppe Bruni, Sepehr Maleki, Senthil K Krishnababu</li>
+<li><strong>Date</strong>: 2025-03-18</li>
+<li><strong>Keywords</strong>: Gas Turbine, Turbomachinery, Compressor, Deep Learning, CFD</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2503.14369" target="_blank">2503.14369</a> | <a href="https://arxiv.org/pdf/2503.14369" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>The field of scientific machine learning and its applications to numerical analyses such as CFD has recently experienced a surge in interest. While its viability has been demonstrated in different domains, it has not yet reached a level of robustness and scalability to make it practical for industrial applications in the turbomachinery field. The highly complex, turbulent, and three-dimensional flows of multi-stage axial compressors for gas turbine applications represent a remarkably challenging case. This is due to the high-dimensionality of the regression of the flow-field from geometrical a...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>12. Dynamical Mode Recognition of Turbulent Flames in a Swirl-stabilized Annular Combustor by a Time-series Learning Approach</h3>
+<ul>
+<li><strong>Authors</strong>: Tao Yang, Weiming Xu, Liangliang Xu, Peng Zhang</li>
+<li><strong>Date</strong>: 2025-03-17</li>
+<li><strong>Keywords</strong>: Gas Turbine, RANS, Combustion, Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2503.13559" target="_blank">2503.13559</a> | <a href="https://arxiv.org/pdf/2503.13559" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Thermoacoustic instability in annular combustors, essential to aero engines and modern gas turbines, can severely impair operational stability and efficiency, accurately recognizing and understanding various combustion modes is the prerequisite for understanding and controlling combustion instabilities. However, the high-dimensional spatial-temporal dynamics of turbulent flames typically pose considerable challenges to mode recognition. Based on the bidirectional temporal and nonlinear dimensionality reduction models, this study introduces a two-layer bidirectional long short-term memory varia...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>13. A Supervised Machine-Learning Approach For Turboshaft Engine Dynamic Modeling Under Real Flight Conditions</h3>
+<ul>
+<li><strong>Authors</strong>: Damiano Paniccia, Francesco Aldo Tucci, Joel Guerrero, Luigi Capone, Nicoletta Sanguini et al.</li>
+<li><strong>Date</strong>: 2025-02-19</li>
+<li><strong>Keywords</strong>: RANS, Data-Driven, Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2502.14120" target="_blank">2502.14120</a> | <a href="https://arxiv.org/pdf/2502.14120" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Rotorcraft engines are highly complex, nonlinear thermodynamic systems that operate under varying environmental and flight conditions. Simulating their dynamics is crucial for design, fault diagnostics, and deterioration control phases, and requires robust and reliable control systems to estimate engine performance throughout flight envelope. However, the development of detailed physical models of the engine based on numerical simulations is a very challenging task due to the complex and entangled physics driving the engine. In this scenario, data-driven machine-learning techniques are of grea...</blockquote>
+</div>
+<h2>Deep Learning for Turbomachinery Aerodynamics（10 papers）</h2>
+<table><thead><tr><th>#</th><th>Date</th><th>Title</th><th>Authors</th><th>Keywords</th><th>Paper</th><th>Code</th></tr></thead><tbody>
+<tr><td>14</td><td>2026-04-08</td><td><strong>TurboAgent: An LLM-Driven Autonomous Multi-Agent Framework for Turbomachinery Aerodynamic Design</strong></td><td>Juan Du et al.</td><td>Turbomachinery, Compressor, CFD, RANS, Performance Prediction</td><td><a href="https://arxiv.org/abs/2604.06747" target="_blank">2604.06747</a></td><td>N/A</td></tr>
+<tr><td>15</td><td>2026-03-30</td><td><strong>Data-informed lifting line theory</strong></td><td>Arjun Sharma et al.</td><td>Data-Driven, Neural Network, Optimization</td><td><a href="https://arxiv.org/abs/2603.29051" target="_blank">2603.29051</a></td><td>N/A</td></tr>
+<tr><td>16</td><td>2026-03-30</td><td><strong>FluidFlow: a flow-matching generative model for fluid dynamics surrogates on unstructured meshes</strong></td><td>David Ramos et al.</td><td>Deep Learning, Surrogate Model, CFD, RANS, Data-Driven</td><td><a href="https://arxiv.org/abs/2604.08586" target="_blank">2604.08586</a></td><td>N/A</td></tr>
+<tr><td>17</td><td>2026-03-22</td><td><strong>High-Endurance UCAV Propulsion System: A 1-D CNN-Based Real-Time Fault Classification for Tactical-Grade IPMSM Drive</strong></td><td>Tahmin Mahmud et al.</td><td>Neural Network</td><td><a href="https://arxiv.org/abs/2603.21133" target="_blank">2603.21133</a></td><td>N/A</td></tr>
+<tr><td>18</td><td>2026-03-09</td><td><strong>Neural Network Tuning of FSMPC for Drives</strong></td><td>Juana M. Martínez-Heredia et al.</td><td>Neural Network</td><td><a href="https://arxiv.org/abs/2603.08816" target="_blank">2603.08816</a></td><td>N/A</td></tr>
+<tr><td>19</td><td>2026-03-09</td><td><strong>Real-Time Drone Detection in Event Cameras via Per-Pixel Frequency Analysis</strong></td><td>Michael Bezick et al.</td><td>PINN, Deep Learning, RANS</td><td><a href="https://arxiv.org/abs/2603.08386" target="_blank">2603.08386</a></td><td>N/A</td></tr>
+<tr><td>20</td><td>2026-03-07</td><td><strong>Optimize discrete loss with finite-difference physics constraint and time-stepping for PDE solving</strong></td><td>Yali Luo et al.</td><td>PINN, Physics-Informed, CFD, RANS, Aerodynamics</td><td><a href="https://arxiv.org/abs/2603.07151" target="_blank">2603.07151</a></td><td>N/A</td></tr>
+<tr><td>21</td><td>2026-02-28</td><td><strong>AI-IO: An Aerodynamics-Inspired Real-Time Inertial Odometry for Quadrotors</strong></td><td>Jiahao Cui et al.</td><td>RANS, Aerodynamics</td><td><a href="https://arxiv.org/abs/2603.00597" target="_blank">2603.00597</a></td><td>N/A</td></tr>
+<tr><td>22</td><td>2026-02-24</td><td><strong>Generative Deep Learning for the Two-Dimensional Quantum Rotor Model</strong></td><td>Yanyang Wang et al.</td><td>Deep Learning, RANS, Optimization</td><td><a href="https://arxiv.org/abs/2602.20772" target="_blank">2602.20772</a></td><td>N/A</td></tr>
+<tr><td>23</td><td>2026-02-18</td><td><strong>Reinforcement learning for path integrals in quantum statistical physics</strong></td><td>Timour Ichmoukhamedov et al.</td><td>Neural Network</td><td><a href="https://arxiv.org/abs/2602.16176" target="_blank">2602.16176</a></td><td>N/A</td></tr>
+</tbody></table>
+<div class="paper-detail">
+<h3>14. TurboAgent: An LLM-Driven Autonomous Multi-Agent Framework for Turbomachinery Aerodynamic Design</h3>
+<ul>
+<li><strong>Authors</strong>: Juan Du, Yueteng Wu, Pan Zhao, Yuze Liu, Min Zhang et al.</li>
+<li><strong>Date</strong>: 2026-04-08</li>
+<li><strong>Keywords</strong>: Turbomachinery, Compressor, CFD, RANS, Performance Prediction</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2604.06747" target="_blank">2604.06747</a> | <a href="https://arxiv.org/pdf/2604.06747" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>The aerodynamic design of turbomachinery is a complex and tightly coupled multi-stage process involving geometry generation, performance prediction, optimization, and high-fidelity physical validation. Existing intelligent design approaches typically focus on individual stages or rely on loosely coupled pipelines, making fully autonomous end-to-end design challenging. To address this issue, this study proposes TurboAgent, a large language model (LLM)-driven autonomous multi-agent framework for turbomachinery aerodynamic design and optimization. The LLM serves as the core for task planning and ...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>15. Data-informed lifting line theory</h3>
+<ul>
+<li><strong>Authors</strong>: Arjun Sharma, Jonas A. Actor, Peter A. Bosler</li>
+<li><strong>Date</strong>: 2026-03-30</li>
+<li><strong>Keywords</strong>: Data-Driven, Neural Network, Optimization</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2603.29051" target="_blank">2603.29051</a> | <a href="https://arxiv.org/pdf/2603.29051" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>We present a data-driven framework that extends the predictive capability of classical lifting-line theory (LLT) to a wider aerodynamic regime by incorporating higher-fidelity aerodynamic data from panel method simulations. A neural network architecture with a convolutional layer followed by fully connected layers is developed, comprising two parallel subnetworks to separately process spanwise collocation points and global geometric/aerodynamic inputs such as angle of attack, chord, twist, airfoil distribution, and sweep. Among several configurations tested, this architecture is most effective...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>16. FluidFlow: a flow-matching generative model for fluid dynamics surrogates on unstructured meshes</h3>
+<ul>
+<li><strong>Authors</strong>: David Ramos, Lucas Lacasa, Fermín Gutiérrez, Eusebio Valero, Gonzalo Rubio</li>
+<li><strong>Date</strong>: 2026-03-30</li>
+<li><strong>Keywords</strong>: Deep Learning, Surrogate Model, CFD, RANS, Data-Driven</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2604.08586" target="_blank">2604.08586</a> | <a href="https://arxiv.org/pdf/2604.08586" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Computational fluid dynamics (CFD) provides high-fidelity simulations of fluid flows but remains computationally expensive for many-query applications. In recent years deep learning (DL) has been used to construct data-driven fluid-dynamic surrogate models. In this work we consider a different learning paradigm and embrace generative modelling as a framework for constructing scalable fluid-dynamics surrogate models. We introduce FluidFlow, a generative model based on conditional flow-matching, a recent alternative to diffusion models that learns deterministic transport maps between noise and d...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>17. High-Endurance UCAV Propulsion System: A 1-D CNN-Based Real-Time Fault Classification for Tactical-Grade IPMSM Drive</h3>
+<ul>
+<li><strong>Authors</strong>: Tahmin Mahmud</li>
+<li><strong>Date</strong>: 2026-03-22</li>
+<li><strong>Keywords</strong>: Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2603.21133" target="_blank">2603.21133</a> | <a href="https://arxiv.org/pdf/2603.21133" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>High-performance propulsion for mission-critical applications demands unprecedented reliability and real-time fault resilience. Conventional diagnostic methods (signal-based analysis and standard ML models) are essential for stator/rotor fault detection but suffer from high latency and poor generalization across variable speeds. This paper proposes a 1-D Convolutional Neural Network (CNN) framework for real-time fault classification in the HPDM-350 interior permanent magnet synchronous motor (IPMSM). The proposed architecture extracts discriminative features directly from high-frequency curren...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>18. Neural Network Tuning of FSMPC for Drives</h3>
+<ul>
+<li><strong>Authors</strong>: Juana M. Martínez-Heredia, José L. Mora</li>
+<li><strong>Date</strong>: 2026-03-09</li>
+<li><strong>Keywords</strong>: Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2603.08816" target="_blank">2603.08816</a> | <a href="https://arxiv.org/pdf/2603.08816" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>This preprint presents a neural network tuner for the finite state model predictive control of an induction motor. The tuner deals with the parameters of the controllers in the speed loop and in the stator current loop. The results are assessed using a five phase machine in an experimental setup. Data for the neural network training is obtained from the experiments using step tests.</blockquote>
+</div>
+<div class="paper-detail">
+<h3>19. Real-Time Drone Detection in Event Cameras via Per-Pixel Frequency Analysis</h3>
+<ul>
+<li><strong>Authors</strong>: Michael Bezick, Majid Sahin</li>
+<li><strong>Date</strong>: 2026-03-09</li>
+<li><strong>Keywords</strong>: PINN, Deep Learning, RANS</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2603.08386" target="_blank">2603.08386</a> | <a href="https://arxiv.org/pdf/2603.08386" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Detecting fast-moving objects, such as unmanned aerial vehicle (UAV), from event camera data is challenging due to the sparse, asynchronous nature of the input. Traditional Discrete Fourier Transforms (DFT) are effective at identifying periodic signals, such as spinning rotors, but they assume uniformly sampled data, which event cameras do not provide. We propose a novel per-pixel temporal analysis framework using the Non-uniform Discrete Fourier Transform (NDFT), which we call Drone Detection via Harmonic Fingerprinting (DDHF). Our method uses purely analytical techniques that identify the fr...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>20. Optimize discrete loss with finite-difference physics constraint and time-stepping for PDE solving</h3>
+<ul>
+<li><strong>Authors</strong>: Yali Luo, Yiye Zou, Heng Zhang, Mingjie Zhang, Gang Wei et al.</li>
+<li><strong>Date</strong>: 2026-03-07</li>
+<li><strong>Keywords</strong>: PINN, Physics-Informed, CFD, RANS, Aerodynamics</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2603.07151" target="_blank">2603.07151</a> | <a href="https://arxiv.org/pdf/2603.07151" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Computational Fluid Dynamics (CFD) is an important approach for analyzing flow phenomena and predicting engineering-relevant quantities. The governing physics is formulated as partial differential equations(PDEs) and solved numerically on computational grids. Physics-informed neural networks(PINNs) have emerged as a popular optimization-based approach for solving PDEs, but they often suffer from ill-conditioned objectives and the high cost of automatic differentiation. Optimization-based discretizations such as ODIL mitigate several PINN drawbacks by optimizing discrete variables directly, yet...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>21. AI-IO: An Aerodynamics-Inspired Real-Time Inertial Odometry for Quadrotors</h3>
+<ul>
+<li><strong>Authors</strong>: Jiahao Cui, Feng Yu, Linzuo Zhang, Yu Hu, Danping Zou</li>
+<li><strong>Date</strong>: 2026-02-28</li>
+<li><strong>Keywords</strong>: RANS, Aerodynamics</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2603.00597" target="_blank">2603.00597</a> | <a href="https://arxiv.org/pdf/2603.00597" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Inertial Odometry (IO) has gained attention in quadrotor applications due to its sole reliance on inertial measurement units (IMUs), attributed to its lightweight design, low cost, and robust performance across diverse environments. However, most existing learning-based inertial odometry systems for quadrotors either use only IMU data or include additional dynamics-related inputs such as thrust, but still lack a principled formulation of the underlying physical model to be learned. This lack of interpretability hampers the model's ability to generalize and often limits its accuracy. In this wo...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>22. Generative Deep Learning for the Two-Dimensional Quantum Rotor Model</h3>
+<ul>
+<li><strong>Authors</strong>: Yanyang Wang, Feng Gao, Kui Tuo, Wei Li</li>
+<li><strong>Date</strong>: 2026-02-24</li>
+<li><strong>Keywords</strong>: Deep Learning, RANS, Optimization</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2602.20772" target="_blank">2602.20772</a> | <a href="https://arxiv.org/pdf/2602.20772" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>The advancement of diverse generative deep learning models and their variants has furnished substantial insights for investigating quantum many-body problems. In this work, we design two models based on the foundational architecture of generative adversarial networks (GANs) to investigate the ground-state properties and phase transition characteristics of the two-dimensional quantum rotor model (QRM). Within a semi-supervised learning framework, we incorporate multiple layers of transposed convolutions in the generator, enabling the conditional GAN to more efficiently extract low-dimensional e...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>23. Reinforcement learning for path integrals in quantum statistical physics</h3>
+<ul>
+<li><strong>Authors</strong>: Timour Ichmoukhamedov, Dries Sels</li>
+<li><strong>Date</strong>: 2026-02-18</li>
+<li><strong>Keywords</strong>: Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2602.16176" target="_blank">2602.16176</a> | <a href="https://arxiv.org/pdf/2602.16176" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Machine learning is rapidly finding its way into the field of computational quantum physics. One of the most popular and widely studied approaches in this direction is to use neural networks to model quantum states (NQS) in the Hamiltonian formulation of quantum mechanics. However, an alternative angle of attack to leverage machine learning in physics is through the path integral formulation, which has so far received far more limited attention. In this paper, we explore how reinforcement learning can be used to compute a class of Euclidean path integrals that yield the thermal density matrix ...</blockquote>
+</div>
+<h2>CFD-ML for Turbomachinery Flows（10 papers）</h2>
+<table><thead><tr><th>#</th><th>Date</th><th>Title</th><th>Authors</th><th>Keywords</th><th>Paper</th><th>Code</th></tr></thead><tbody>
+<tr><td>24</td><td>2026-03-26</td><td><strong>Data-Driven Modal Decomposition Analysis of Unsteady Flow in a Multi-Stage Turbine</strong></td><td>Yalu Zhu et al.</td><td>RANS, Data-Driven</td><td><a href="https://arxiv.org/abs/2603.24905" target="_blank">2603.24905</a></td><td>N/A</td></tr>
+<tr><td>25</td><td>2026-02-09</td><td><strong>A few-shot and physically restorable symbolic regression turbulence model based on normalized general effective-viscosity hypothesis</strong></td><td>Ziqi Ji et al.</td><td>Compressor, RANS, Data-Driven</td><td><a href="https://arxiv.org/abs/2602.08270" target="_blank">2602.08270</a></td><td>N/A</td></tr>
+<tr><td>26</td><td>2025-09-21</td><td><strong>Toward a unified data-driven turbulence model through multi-objective learning</strong></td><td>Zhuo-Ran Liu et al.</td><td>Gas Turbine, Data-Driven</td><td><a href="https://arxiv.org/abs/2509.17189" target="_blank">2509.17189</a></td><td>N/A</td></tr>
+<tr><td>27</td><td>2025-05-26</td><td><strong>Predicting Onflow Parameters Using Transfer Learning for Domain and Task Adaptation</strong></td><td>Emre Yilmaz et al.</td><td>CFD, RANS, Data-Driven, Neural Network, Transfer Learning</td><td><a href="https://arxiv.org/abs/2506.14784" target="_blank">2506.14784</a></td><td>N/A</td></tr>
+<tr><td>28</td><td>2024-10-16</td><td><strong>Enhancing generalizability of machine learning general effective-viscosity turbulence model via tensor basis normalization</strong></td><td>Ziqi Ji et al.</td><td>Compressor, RANS</td><td><a href="https://arxiv.org/abs/2410.12255" target="_blank">2410.12255</a></td><td>N/A</td></tr>
+<tr><td>29</td><td>2024-09-12</td><td><strong>Enhancing Accuracy of Transition Models for Gas Turbine Applications Through Data-Driven Approaches</strong></td><td>Harshal D. Akolekar et al.</td><td>Gas Turbine, RANS, Data-Driven</td><td><a href="https://arxiv.org/abs/2409.07803" target="_blank">2409.07803</a></td><td>N/A</td></tr>
+<tr><td>30</td><td>2024-08-26</td><td><strong>Model-Based Reinforcement Learning for Control of Strongly-Disturbed Unsteady Aerodynamic Flows</strong></td><td>Zhecheng Liu et al.</td><td>CFD, RANS, Neural Network, Flow Field</td><td><a href="https://arxiv.org/abs/2408.14685" target="_blank">2408.14685</a></td><td>N/A</td></tr>
+<tr><td>31</td><td>2024-08-12</td><td><strong>Implicit Neural Representation For Accurate CFD Flow Field Prediction</strong></td><td>Laurent de Vito et al.</td><td>Compressor, Deep Learning, CFD, Data-Driven, Neural Network</td><td><a href="https://arxiv.org/abs/2408.06486" target="_blank">2408.06486</a></td><td>N/A</td></tr>
+<tr><td>32</td><td>2024-04-27</td><td><strong>Dynamical Mode Recognition of Coupled Flame Oscillators by Supervised and Unsupervised Learning Approaches</strong></td><td>Weiming Xu et al.</td><td>Gas Turbine, RANS, Combustion, Data-Driven</td><td><a href="https://arxiv.org/abs/2404.17801" target="_blank">2404.17801</a></td><td>N/A</td></tr>
+<tr><td>33</td><td>2023-11-20</td><td><strong>Forward Gradients for Data-Driven CFD Wall Modeling</strong></td><td>Jan Hückelheim et al.</td><td>Gas Turbine, CFD, Data-Driven, Neural Network, Optimization</td><td><a href="https://arxiv.org/abs/2311.11876" target="_blank">2311.11876</a></td><td>N/A</td></tr>
+</tbody></table>
+<div class="paper-detail">
+<h3>24. Data-Driven Modal Decomposition Analysis of Unsteady Flow in a Multi-Stage Turbine</h3>
+<ul>
+<li><strong>Authors</strong>: Yalu Zhu, Feng Liu</li>
+<li><strong>Date</strong>: 2026-03-26</li>
+<li><strong>Keywords</strong>: RANS, Data-Driven</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2603.24905" target="_blank">2603.24905</a> | <a href="https://arxiv.org/pdf/2603.24905" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Two data-driven modal analysis approaches, proper orthogonal decomposition (POD) and dynamic mode decomposition (DMD), are applied to analyze the unsteady flow obtained by solving the Reynolds-averaged Navier-Stokes (RANS) equations in a 1.5-stage axial turbine. The reduced-order reconstructed pressure, dominant mode shapes, and dynamic features of these dominant modes in the downstream stator of the turbine are compared between POD and four DMD variants. It is found that the DMD methods based on the amplitude criterion, the Tissot criterion, and the sparsity-promoting DMD (SP-DMD) achieve rec...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>25. A few-shot and physically restorable symbolic regression turbulence model based on normalized general effective-viscosity hypothesis</h3>
+<ul>
+<li><strong>Authors</strong>: Ziqi Ji, Penghao Duan, Gang Du</li>
+<li><strong>Date</strong>: 2026-02-09</li>
+<li><strong>Keywords</strong>: Compressor, RANS, Data-Driven</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2602.08270" target="_blank">2602.08270</a> | <a href="https://arxiv.org/pdf/2602.08270" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Turbulence is a complex, irregular flow phenomenon ubiquitous in natural processes and engineering applications. The Reynolds-averaged Navier-Stokes (RANS) method, owing to its low computational cost, has become the primary approach for rapid simulation of engineering turbulence problems. However, the inaccuracy of classical turbulence models constitutes the main drawback of the RANS framework. With the rapid development of data-driven approaches, many data-driven turbulence models have been proposed, yet they still suffer from issues of generalizability and accuracy. In this work, we propose ...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>26. Toward a unified data-driven turbulence model through multi-objective learning</h3>
+<ul>
+<li><strong>Authors</strong>: Zhuo-Ran Liu, Hao-Chen Wang, Zhuo-Lin Zhao, Heng Xiao</li>
+<li><strong>Date</strong>: 2025-09-21</li>
+<li><strong>Keywords</strong>: Gas Turbine, Data-Driven</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2509.17189" target="_blank">2509.17189</a> | <a href="https://arxiv.org/pdf/2509.17189" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Turbulence remains one of the last unresolved problems of classical physics and a major bottleneck to accurate flow prediction in climate, aerospace, and energy systems. Industrial simulations therefore rely on averaged representations of turbulence, which often struggle to predict flows governed by multiple interacting mechanisms. We present a unified, data-driven turbulence modeling framework designed to learn robustly from sparse, indirect observations across diverse flow regimes. The framework embeds physical consistency into a flexible, frame-invariant closure, automatically selects repre...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>27. Predicting Onflow Parameters Using Transfer Learning for Domain and Task Adaptation</h3>
+<ul>
+<li><strong>Authors</strong>: Emre Yilmaz, Philipp Bekemeyer</li>
+<li><strong>Date</strong>: 2025-05-26</li>
+<li><strong>Keywords</strong>: CFD, RANS, Data-Driven, Neural Network, Transfer Learning</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2506.14784" target="_blank">2506.14784</a> | <a href="https://arxiv.org/pdf/2506.14784" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Determining onflow parameters is crucial from the perspectives of wind tunnel testing and regular flight and wind turbine operations. These parameters have traditionally been predicted via direct measurements which might lead to challenges in case of sensor faults. Alternatively, a data-driven prediction model based on surface pressure data can be used to determine these parameters. It is essential that such predictors achieve close to real-time learning as dictated by practical applications such as monitoring wind tunnel operations or learning the variations in aerodynamic performance of aero...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>28. Enhancing generalizability of machine learning general effective-viscosity turbulence model via tensor basis normalization</h3>
+<ul>
+<li><strong>Authors</strong>: Ziqi Ji, Penghao Duan, Gang Du</li>
+<li><strong>Date</strong>: 2024-10-16</li>
+<li><strong>Keywords</strong>: Compressor, RANS</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2410.12255" target="_blank">2410.12255</a> | <a href="https://arxiv.org/pdf/2410.12255" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>With the rapid advancement of machine learning techniques, the development and study of machine learning turbulence models have become increasingly prevalent. As a critical component of turbulence modeling, the constitutive relationship between the Reynolds stress tensor and the mean flow quantities, modeled using machine learning methods, faces a pressing challenge: the lack of generalizability. To address this issue, we propose a novel tensor basis normalization technique to improve machine learning turbulence models, grounded in the general effective-viscosity hypothesis. In this study, we ...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>29. Enhancing Accuracy of Transition Models for Gas Turbine Applications Through Data-Driven Approaches</h3>
+<ul>
+<li><strong>Authors</strong>: Harshal D. Akolekar</li>
+<li><strong>Date</strong>: 2024-09-12</li>
+<li><strong>Keywords</strong>: Gas Turbine, RANS, Data-Driven</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2409.07803" target="_blank">2409.07803</a> | <a href="https://arxiv.org/pdf/2409.07803" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Separated flow transition is a very popular phenomenon in gas turbines, especially low-pressure turbines (LPT). Low-fidelity simulations are often used for gas turbine design. However, they are unable to predict separated flow transition accurately. To improve the separated flow transition prediction for LPTs, the empirical relations that are derived for transition prediction need to be significantly modified. To achieve this, machine learning approaches are used to investigate a large number of functional forms using computational fluid dynamics-driven gene expression programming. These funct...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>30. Model-Based Reinforcement Learning for Control of Strongly-Disturbed Unsteady Aerodynamic Flows</h3>
+<ul>
+<li><strong>Authors</strong>: Zhecheng Liu, Diederik Beckers, Jeff D. Eldredge</li>
+<li><strong>Date</strong>: 2024-08-26</li>
+<li><strong>Keywords</strong>: CFD, RANS, Neural Network, Flow Field</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2408.14685" target="_blank">2408.14685</a> | <a href="https://arxiv.org/pdf/2408.14685" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>The intrinsic high dimension of fluid dynamics is an inherent challenge to control of aerodynamic flows, and this is further complicated by a flow's nonlinear response to strong disturbances. Deep reinforcement learning, which takes advantage of the exploratory aspects of reinforcement learning (RL) and the rich nonlinearity of a deep neural network, provides a promising approach to discover feasible control strategies. However, the typical model-free approach to reinforcement learning requires a significant amount of interaction between the flow environment and the RL agent during training, a...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>31. Implicit Neural Representation For Accurate CFD Flow Field Prediction</h3>
+<ul>
+<li><strong>Authors</strong>: Laurent de Vito, Nils Pinnau, Simone Dey</li>
+<li><strong>Date</strong>: 2024-08-12</li>
+<li><strong>Keywords</strong>: Compressor, Deep Learning, CFD, Data-Driven, Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2408.06486" target="_blank">2408.06486</a> | <a href="https://arxiv.org/pdf/2408.06486" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Despite the plethora of deep learning frameworks for flow field prediction, most of them deal with flow fields on regular domains, and although the best ones can cope with irregular domains, they mostly rely on graph networks, so that real industrial applications remain currently elusive. We present a deep learning framework for 3D flow field prediction applied to blades of aircraft engine turbines and compressors. Crucially, we view any 3D field as a function from coordinates that is modeled by a neural network we call the backbone-net. It inherits the property of coordinate-based MLPs, namel...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>32. Dynamical Mode Recognition of Coupled Flame Oscillators by Supervised and Unsupervised Learning Approaches</h3>
+<ul>
+<li><strong>Authors</strong>: Weiming Xu, Tao Yang, Peng Zhang</li>
+<li><strong>Date</strong>: 2024-04-27</li>
+<li><strong>Keywords</strong>: Gas Turbine, RANS, Combustion, Data-Driven</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2404.17801" target="_blank">2404.17801</a> | <a href="https://arxiv.org/pdf/2404.17801" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Combustion instability in gas turbines and rocket engines, as one of the most challenging problems in combustion research, arises from the complex interactions among flames, which are also influenced by chemical reactions, heat and mass transfer, and acoustics. Identifying and understanding combustion instability is essential to ensure the safe and reliable operation of many combustion systems, where exploring and classifying the dynamical behaviors of complex flame systems is a core take. To facilitate fundamental studies, the present work concerns dynamical mode recognition of coupled flame ...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>33. Forward Gradients for Data-Driven CFD Wall Modeling</h3>
+<ul>
+<li><strong>Authors</strong>: Jan Hückelheim, Tadbhagya Kumar, Krishnan Raghavan, Pinaki Pal</li>
+<li><strong>Date</strong>: 2023-11-20</li>
+<li><strong>Keywords</strong>: Gas Turbine, CFD, Data-Driven, Neural Network, Optimization</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2311.11876" target="_blank">2311.11876</a> | <a href="https://arxiv.org/pdf/2311.11876" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Computational Fluid Dynamics (CFD) is used in the design and optimization of gas turbines and many other industrial/ scientific applications. However, the practical use is often limited by the high computational cost, and the accurate resolution of near-wall flow is a significant contributor to this cost. Machine learning (ML) and other data-driven methods can complement existing wall models. Nevertheless, training these models is bottlenecked by the large computational effort and memory footprint demanded by back-propagation. Recent work has presented alternatives for computing gradients of n...</blockquote>
+</div>
+<h2>ML for Combustion & Thermal Analysis（10 papers）</h2>
+<table><thead><tr><th>#</th><th>Date</th><th>Title</th><th>Authors</th><th>Keywords</th><th>Paper</th><th>Code</th></tr></thead><tbody>
+<tr><td>34</td><td>2026-04-04</td><td><strong>Structurally Triggered Breakdown of the Phonon Gas Model in Crystalline Metal-Organic Frameworks</strong></td><td>Penghua Ying et al.</td><td>RANS</td><td><a href="https://arxiv.org/abs/2604.03783" target="_blank">2604.03783</a></td><td>N/A</td></tr>
+<tr><td>35</td><td>2026-04-01</td><td><strong>Beyond Beryllium: AI-Accelerated Materials Discovery for Interstellar Spacecraft Shielding</strong></td><td>Yue Li et al.</td><td>RANS, Neural Network</td><td><a href="https://arxiv.org/abs/2604.00571" target="_blank">2604.00571</a></td><td>N/A</td></tr>
+<tr><td>36</td><td>2026-03-27</td><td><strong>Physics-guided laminar flame speed correlation for methane-hydrogen-air mixtures with varying dilution</strong></td><td>Raik Hesse et al.</td><td>Combustion</td><td><a href="https://arxiv.org/abs/2603.26568" target="_blank">2603.26568</a></td><td>N/A</td></tr>
+<tr><td>37</td><td>2026-03-24</td><td><strong>A Residual-Attention Physics-Informed Neural Network for Irregular Interfaces and Multi-Peak Transport Fields</strong></td><td>Baitong Zhou et al.</td><td>PINN, Physics-Informed, Surrogate Model, RANS, Neural Network</td><td><a href="https://arxiv.org/abs/2603.22803" target="_blank">2603.22803</a></td><td>N/A</td></tr>
+<tr><td>38</td><td>2026-03-16</td><td><strong>PiGRAND: Physics-informed Graph Neural Diffusion for Intelligent Additive Manufacturing</strong></td><td>Benjamin Uhrich et al.</td><td>PINN, Physics-Informed, RANS, Data-Driven, Neural Network</td><td><a href="https://arxiv.org/abs/2603.15194" target="_blank">2603.15194</a></td><td>N/A</td></tr>
+<tr><td>39</td><td>2026-03-03</td><td><strong>Fingerprint Recognition of Partial Discharge Signals in Deep Learning Enhanced Rydberg Atomic Sensors</strong></td><td>Yi-Ming Yin et al.</td><td>Deep Learning, RANS, Data-Driven</td><td><a href="https://arxiv.org/abs/2603.02925" target="_blank">2603.02925</a></td><td>N/A</td></tr>
+<tr><td>40</td><td>2026-03-02</td><td><strong>Graph neural network force fields for adiabatic dynamics of lattice Hamiltonians</strong></td><td>Yunhao Fan et al.</td><td>RANS, Neural Network</td><td><a href="https://arxiv.org/abs/2603.02039" target="_blank">2603.02039</a></td><td>N/A</td></tr>
+<tr><td>41</td><td>2026-03-01</td><td><strong>Super-resolution of turbulent reacting flows on complex meshes using graph neural networks</strong></td><td>Priyabrat Dash et al.</td><td>Deep Learning, Combustion, Data-Driven, Neural Network</td><td><a href="https://arxiv.org/abs/2603.01080" target="_blank">2603.01080</a></td><td>N/A</td></tr>
+<tr><td>42</td><td>2026-02-24</td><td><strong>Machine Learning Modeling of Temperature-Dependent Optoelectronic Properties of Anharmonic Solid Solutions</strong></td><td>Pol Benítez et al.</td><td>Gas Turbine, Neural Network</td><td><a href="https://arxiv.org/abs/2602.20778" target="_blank">2602.20778</a></td><td>N/A</td></tr>
+<tr><td>43</td><td>2026-02-13</td><td><strong>Exploring Wetting and Optical Properties of CuAg Alloys via Surface Texture Morphology Analysis</strong></td><td>Krzysztof Wieczerzak et al.</td><td>Gas Turbine, Neural Network</td><td><a href="https://arxiv.org/abs/2602.12848" target="_blank">2602.12848</a></td><td>N/A</td></tr>
+</tbody></table>
+<div class="paper-detail">
+<h3>34. Structurally Triggered Breakdown of the Phonon Gas Model in Crystalline Metal-Organic Frameworks</h3>
+<ul>
+<li><strong>Authors</strong>: Penghua Ying, Ting Liang, Yun Chen, Yan Chen, Shiyun Xiong et al.</li>
+<li><strong>Date</strong>: 2026-04-04</li>
+<li><strong>Keywords</strong>: RANS</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2604.03783" target="_blank">2604.03783</a> | <a href="https://arxiv.org/pdf/2604.03783" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>While crystalline materials with glass-like thermal conductivity are fundamentally intriguing, structurally triggering the transition from propagating to diffusive heat transport within a single framework remains a formidable challenge. Here, using extensive machine learning molecular dynamics, we demonstrate a fundamental thermal transport crossover in metal-organic frameworks. We reveal that grafting flexible side chains onto a pristine MOF backbone acts as a structural switch, strongly reducing the thermal conductivity by $\sim$70% (from $\sim 0.7$ to $\sim 0.2\ \text{W m}^{-1}\text{K}^{-1}...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>35. Beyond Beryllium: AI-Accelerated Materials Discovery for Interstellar Spacecraft Shielding</h3>
+<ul>
+<li><strong>Authors</strong>: Yue Li, Xu Pan, Kaiyuan Guo</li>
+<li><strong>Date</strong>: 2026-04-01</li>
+<li><strong>Keywords</strong>: RANS, Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2604.00571" target="_blank">2604.00571</a> | <a href="https://arxiv.org/pdf/2604.00571" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Project Daedalus (1973--1978), the most detailed interstellar probe design study ever conducted, specified a 9 mm beryllium erosion shield to protect the spacecraft payload during its 5.9 light-year cruise to Barnard's Star at 12% of the speed of light. This design, however, predated both the isolation of two-dimensional materials and the development of graph neural network (GNN) property predictors. Here, we systematically screen 20 candidate materials--spanning conventional aerospace metals, transition metal dichalcogenides, and ultra-high-temperature ceramics--using density functional theor...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>36. Physics-guided laminar flame speed correlation for methane-hydrogen-air mixtures with varying dilution</h3>
+<ul>
+<li><strong>Authors</strong>: Raik Hesse, Christian Schwenzer, Roman Glaznev, Florence Cameron, Heinz Pitsch et al.</li>
+<li><strong>Date</strong>: 2026-03-27</li>
+<li><strong>Keywords</strong>: Combustion</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2603.26568" target="_blank">2603.26568</a> | <a href="https://arxiv.org/pdf/2603.26568" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Fuel-flexible, low-carbon combustion systems need to accommodate methane/hydrogen mixtures with air and exhaust-gas dilution. To develop these, we require accurate and efficient correlations for laminar flame speed (LFS). In this work, we introduce a physics-guided LFS correlation that applies to burners, gas engines, and turbines. Our model uses a core-kinetic approach based on flame temperatures, an algebraic function for the equivalence ratio, and a mass-flux-based blending law. This allows for accurate predictions with any methane/hydrogen blend. We set the model parameters using one-dimen...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>37. A Residual-Attention Physics-Informed Neural Network for Irregular Interfaces and Multi-Peak Transport Fields</h3>
+<ul>
+<li><strong>Authors</strong>: Baitong Zhou, Ze Tao, Fujun Liu, Xuan Fang</li>
+<li><strong>Date</strong>: 2026-03-24</li>
+<li><strong>Keywords</strong>: PINN, Physics-Informed, Surrogate Model, RANS, Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2603.22803" target="_blank">2603.22803</a> | <a href="https://arxiv.org/pdf/2603.22803" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>In complex engineering systems such as electro-thermal-fluid coupling, rapid and accurate prediction of multi-physics fields is essential for advanced applications like digital twins and real-time condition monitoring. Traditional numerical methods often suffer from high computational latency, whereas standard Physics-Informed Neural Networks (PINNs) frequently fail to capture critical local features, such as irregular interfaces, localized high-gradient regions, and multi-peak transport structures. To address these limitations and provide high-fidelity intelligent predictions for engineering ...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>38. PiGRAND: Physics-informed Graph Neural Diffusion for Intelligent Additive Manufacturing</h3>
+<ul>
+<li><strong>Authors</strong>: Benjamin Uhrich, Tim Häntschel, Erhard Rahm</li>
+<li><strong>Date</strong>: 2026-03-16</li>
+<li><strong>Keywords</strong>: PINN, Physics-Informed, RANS, Data-Driven, Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2603.15194" target="_blank">2603.15194</a> | <a href="https://arxiv.org/pdf/2603.15194" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>A comprehensive understanding of heat transport is essential for optimizing various mechanical and engineering applications, including 3D printing. Recent advances in machine learning, combined with physics-based models, have enabled a powerful fusion of numerical methods and data-driven algorithms. This progress is driven by the availability of limited sensor data in various engineering and scientific domains, where the cost of data collection and the inaccessibility of certain measurements are high. To this end, we present PiGRAND, a Physics-informed graph neural diffusion framework. In orde...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>39. Fingerprint Recognition of Partial Discharge Signals in Deep Learning Enhanced Rydberg Atomic Sensors</h3>
+<ul>
+<li><strong>Authors</strong>: Yi-Ming Yin, Qi-Feng Wang, Yu Ma, Tian-Yu Han, Jia-Dou Nan et al.</li>
+<li><strong>Date</strong>: 2026-03-03</li>
+<li><strong>Keywords</strong>: Deep Learning, RANS, Data-Driven</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2603.02925" target="_blank">2603.02925</a> | <a href="https://arxiv.org/pdf/2603.02925" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Partial discharge originates from microscopic insulation imperfections in high-voltage apparatus and is widely considered a critical marker of incipient deterioration. Conventional partial discharge detection methods are typically constrained by limited bandwidth and often rely on predefined feature extraction, which impedes reliable recognition of broadband transient signals. In this work, we employ a Rydberg atomic sensor to directly capture time-domain responses of partial discharge emissions and construct distinctive spectral fingerprints for different types. A 1D ResNet deep learning mode...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>40. Graph neural network force fields for adiabatic dynamics of lattice Hamiltonians</h3>
+<ul>
+<li><strong>Authors</strong>: Yunhao Fan, Gia-Wei Chern</li>
+<li><strong>Date</strong>: 2026-03-02</li>
+<li><strong>Keywords</strong>: RANS, Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2603.02039" target="_blank">2603.02039</a> | <a href="https://arxiv.org/pdf/2603.02039" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Scalable and symmetry-consistent force-field models are essential for extending quantum-accurate simulations to large spatiotemporal scales. While descriptor-based neural networks can incorporate lattice symmetries through carefully engineered features, we show that graph neural networks (GNNs) provide a conceptually simpler and more unified alternative in which discrete lattice translation and point-group symmetries are enforced directly through local message passing and weight sharing. We develop a GNN-based force-field framework for the adiabatic dynamics of lattice Hamiltonians and demonst...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>41. Super-resolution of turbulent reacting flows on complex meshes using graph neural networks</h3>
+<ul>
+<li><strong>Authors</strong>: Priyabrat Dash, Konduri Aditya, Christos E. Frouzakis, Mathis Bode</li>
+<li><strong>Date</strong>: 2026-03-01</li>
+<li><strong>Keywords</strong>: Deep Learning, Combustion, Data-Driven, Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2603.01080" target="_blank">2603.01080</a> | <a href="https://arxiv.org/pdf/2603.01080" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>State-of-the-art deep learning models have been extensively utilized to reconstruct small-scale structures from coarse-grained data in turbulent flows. However, their application has predominantly been restricted to structured uniform meshes, limiting their applicability to data associated with complex geometries that are typically simulated on structured non-uniform or unstructured meshes. Machine learning (ML) models based on graph neural networks (GNNs), known for their ability to process unstructured data, offer a promising alternative. In this study, we leverage the inherent flexibility o...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>42. Machine Learning Modeling of Temperature-Dependent Optoelectronic Properties of Anharmonic Solid Solutions</h3>
+<ul>
+<li><strong>Authors</strong>: Pol Benítez, Cibrán López, Edgardo Saucedo, Claudio Cazorla</li>
+<li><strong>Date</strong>: 2026-02-24</li>
+<li><strong>Keywords</strong>: Gas Turbine, Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2602.20778" target="_blank">2602.20778</a> | <a href="https://arxiv.org/pdf/2602.20778" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Leveraging strong optoelectronic responses to external stimuli, such as temperature and electric fields, is central to the development of advanced photonic technologies, including adaptive photodetectors and reconfigurable photovoltaic devices. However, only a limited number of semiconducting materials, typically characterized by strong electron-phonon coupling, are known to exhibit such pronounced responsiveness, and their equilibrium optoelectronic properties are often not optimally suited for targeted applications. Chemical engineering strategies, such as doping and solid-solution mixing, a...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>43. Exploring Wetting and Optical Properties of CuAg Alloys via Surface Texture Morphology Analysis</h3>
+<ul>
+<li><strong>Authors</strong>: Krzysztof Wieczerzak, Grzegorz Cios, Piotr Bała, Johann Michler, Benedykt R. Jany</li>
+<li><strong>Date</strong>: 2026-02-13</li>
+<li><strong>Keywords</strong>: Gas Turbine, Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2602.12848" target="_blank">2602.12848</a> | <a href="https://arxiv.org/pdf/2602.12848" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Copper-silver (CuAg) alloys are increasingly explored for applications in high-performance electrical and electronic systems, owing to their unique combination of high electrical and thermal conductivity and enhanced mechanical strength. Nevertheless, a thorough understanding of how these alloys surface characteristics fundamentally influence properties remains largely underdeveloped. Here, we explored the complex interplay between surface texture morphology, layer composition, wetting, and optical properties of Cu, Ag, and CuAg thin films deposited on textured silicon substrates via magnetron...</blockquote>
+</div>
+<h2>Gas Turbine Health Monitoring & Fault Diagnosis（8 papers）</h2>
+<table><thead><tr><th>#</th><th>Date</th><th>Title</th><th>Authors</th><th>Keywords</th><th>Paper</th><th>Code</th></tr></thead><tbody>
+<tr><td>44</td><td>2025-04-29</td><td><strong>Hybrid quantum recurrent neural network for remaining useful life prediction</strong></td><td>Olga Tsurkan et al.</td><td>RANS, Neural Network, Remaining Useful Life</td><td><a href="https://arxiv.org/abs/2504.20823" target="_blank">2504.20823</a></td><td>N/A</td></tr>
+<tr><td>45</td><td>2025-02-07</td><td><strong>Using Federated Machine Learning in Predictive Maintenance of Jet Engines</strong></td><td>Asaph Matheus Barbosa et al.</td><td>Remaining Useful Life</td><td><a href="https://arxiv.org/abs/2502.05321" target="_blank">2502.05321</a></td><td>N/A</td></tr>
+<tr><td>46</td><td>2023-09-21</td><td><strong>Ensemble Neural Networks for Remaining Useful Life (RUL) Prediction</strong></td><td>Ahbishek Srinivasan et al.</td><td>Data-Driven, Neural Network, Remaining Useful Life</td><td><a href="https://arxiv.org/abs/2309.12445" target="_blank">2309.12445</a></td><td>N/A</td></tr>
+<tr><td>47</td><td>2022-09-19</td><td><strong>Application of Neural Network in the Prediction of NOx Emissions from Degrading Gas Turbine</strong></td><td>Zhenkun Zheng et al.</td><td>Gas Turbine, Neural Network</td><td><a href="https://arxiv.org/abs/2209.09168" target="_blank">2209.09168</a></td><td>N/A</td></tr>
+<tr><td>48</td><td>2021-10-17</td><td><strong>On-board Fault Diagnosis of a Laboratory Mini SR-30 Gas Turbine Engine</strong></td><td>Richa Singh et al.</td><td>Gas Turbine, Fault Diagnosis, Data-Driven</td><td><a href="https://arxiv.org/abs/2110.08820" target="_blank">2110.08820</a></td><td>N/A</td></tr>
+<tr><td>49</td><td>2021-08-13</td><td><strong>A reduced-order modeling framework for simulating signatures of faults in a bladed disk</strong></td><td>Divya Shyam Singh et al.</td><td>Turbomachinery, Health Monitoring, Data-Driven</td><td><a href="https://arxiv.org/abs/2108.06265" target="_blank">2108.06265</a></td><td>N/A</td></tr>
+<tr><td>50</td><td>2021-02-17</td><td><strong>Genetically Optimized Prediction of Remaining Useful Life</strong></td><td>Shaashwat Agrawal et al.</td><td>Deep Learning, Neural Network, Optimization, Remaining Useful Life</td><td><a href="https://arxiv.org/abs/2102.08845" target="_blank">2102.08845</a></td><td>N/A</td></tr>
+<tr><td>51</td><td>2019-08-25</td><td><strong>On Accurate and Reliable Anomaly Detection for Gas Turbine Combustors: A Deep Learning Approach</strong></td><td>Weizhong Yan et al.</td><td>Gas Turbine, Deep Learning, Combustion, Neural Network, Anomaly Detection</td><td><a href="https://arxiv.org/abs/1908.09238" target="_blank">1908.09238</a></td><td>N/A</td></tr>
+</tbody></table>
+<div class="paper-detail">
+<h3>44. Hybrid quantum recurrent neural network for remaining useful life prediction</h3>
+<ul>
+<li><strong>Authors</strong>: Olga Tsurkan, Aleksandra Konstantinova, Aleksandr Sedykh, Arsenii Senokosov, Daniil Tarpanov et al.</li>
+<li><strong>Date</strong>: 2025-04-29</li>
+<li><strong>Keywords</strong>: RANS, Neural Network, Remaining Useful Life</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2504.20823" target="_blank">2504.20823</a> | <a href="https://arxiv.org/pdf/2504.20823" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Predictive maintenance in aerospace heavily relies on accurate estimation of the remaining useful life of jet engines. In this paper, we introduce a Hybrid Quantum Recurrent Neural Network framework, combining Quantum Long Short-Term Memory layers with classical dense layers for Remaining Useful Life forecasting on NASA's Commercial Modular Aero-Propulsion System Simulation dataset. Each Quantum Long Short-Term Memory gate replaces conventional linear transformations with Quantum Depth-Infused circuits, allowing the network to learn high-frequency components more effectively. Experimental resu...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>45. Using Federated Machine Learning in Predictive Maintenance of Jet Engines</h3>
+<ul>
+<li><strong>Authors</strong>: Asaph Matheus Barbosa, Thao Vy Nhat Ngo, Elaheh Jafarigol, Theodore B. Trafalis, Emuobosa P. Ojoboh</li>
+<li><strong>Date</strong>: 2025-02-07</li>
+<li><strong>Keywords</strong>: Remaining Useful Life</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2502.05321" target="_blank">2502.05321</a> | <a href="https://arxiv.org/pdf/2502.05321" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>The goal of this paper is to predict the Remaining Useful Life (RUL) of turbine jet engines using a federated machine learning framework. Federated Learning enables multiple edge devices/nodes or servers to collaboratively train a shared model without sharing sensitive data, thus preserving data privacy and security. By implementing a nonlinear model, the system aims to capture complex relationships and patterns in the engine data to enhance the accuracy of RUL predictions. This approach leverages decentralized computation, allowing models to be trained locally at each device before aggregatin...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>46. Ensemble Neural Networks for Remaining Useful Life (RUL) Prediction</h3>
+<ul>
+<li><strong>Authors</strong>: Ahbishek Srinivasan, Juan Carlos Andresen, Anders Holst</li>
+<li><strong>Date</strong>: 2023-09-21</li>
+<li><strong>Keywords</strong>: Data-Driven, Neural Network, Remaining Useful Life</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2309.12445" target="_blank">2309.12445</a> | <a href="https://arxiv.org/pdf/2309.12445" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>A core part of maintenance planning is a monitoring system that provides a good prognosis on health and degradation, often expressed as remaining useful life (RUL). Most of the current data-driven approaches for RUL prediction focus on single-point prediction. These point prediction approaches do not include the probabilistic nature of the failure. The few probabilistic approaches to date either include the aleatoric uncertainty (which originates from the system), or the epistemic uncertainty (which originates from the model parameters), or both simultaneously as a total uncertainty. Here, we ...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>47. Application of Neural Network in the Prediction of NOx Emissions from Degrading Gas Turbine</h3>
+<ul>
+<li><strong>Authors</strong>: Zhenkun Zheng, Alan Rezazadeh</li>
+<li><strong>Date</strong>: 2022-09-19</li>
+<li><strong>Keywords</strong>: Gas Turbine, Neural Network</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2209.09168" target="_blank">2209.09168</a> | <a href="https://arxiv.org/pdf/2209.09168" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>This paper is aiming to apply neural network algorithm for predicting the process response (NOx emissions) from degrading natural gas turbines. Nine different process variables, or predictors, are considered in the predictive modelling. It is found out that the model trained by neural network algorithm should use part of recent data in the training and validation sets accounting for the impact of the system degradation. R-Square values of the training and validation sets demonstrate the validity of the model. The residue plot, without any clear pattern, shows the model is appropriate. The rank...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>48. On-board Fault Diagnosis of a Laboratory Mini SR-30 Gas Turbine Engine</h3>
+<ul>
+<li><strong>Authors</strong>: Richa Singh</li>
+<li><strong>Date</strong>: 2021-10-17</li>
+<li><strong>Keywords</strong>: Gas Turbine, Fault Diagnosis, Data-Driven</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2110.08820" target="_blank">2110.08820</a> | <a href="https://arxiv.org/pdf/2110.08820" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Inspired by recent progress in machine learning, a data-driven fault diagnosis and isolation (FDI) scheme is explicitly developed for failure in the fuel supply system and sensor measurements of the laboratory gas turbine system. A passive approach of fault diagnosis is implemented where a model is trained using machine learning classifiers to detect a given set of fault scenarios in real-time on which it is trained. Towards the end, a comparative study is presented for well-known classification techniques, namely Support vector classifier, linear discriminant analysis, K-neighbor, and decisio...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>49. A reduced-order modeling framework for simulating signatures of faults in a bladed disk</h3>
+<ul>
+<li><strong>Authors</strong>: Divya Shyam Singh, Atul Agrawal, D. Roy Mahapatra</li>
+<li><strong>Date</strong>: 2021-08-13</li>
+<li><strong>Keywords</strong>: Turbomachinery, Health Monitoring, Data-Driven</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2108.06265" target="_blank">2108.06265</a> | <a href="https://arxiv.org/pdf/2108.06265" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>This paper reports a reduced-order modeling framework of bladed disks on a rotating shaft to simulate the vibration signature of faults like cracks in different components aiming towards simulated data-driven machine learning. We have employed lumped and one-dimensional analytical models of the subcomponents for better insight into the complex dynamic response. The framework seeks to address some of the challenges encountered in analyzing and optimizing fault detection and identification schemes for health monitoring of rotating turbomachinery, including aero-engines. We model the bladed disks...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>50. Genetically Optimized Prediction of Remaining Useful Life</h3>
+<ul>
+<li><strong>Authors</strong>: Shaashwat Agrawal, Sagnik Sarkar, Gautam Srivastava, Praveen Kumar Reddy Maddikunta, Thippa Reddy Gadekallu</li>
+<li><strong>Date</strong>: 2021-02-17</li>
+<li><strong>Keywords</strong>: Deep Learning, Neural Network, Optimization, Remaining Useful Life</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2102.08845" target="_blank">2102.08845</a> | <a href="https://arxiv.org/pdf/2102.08845" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>The application of remaining useful life (RUL) prediction has taken great importance in terms of energy optimization, cost-effectiveness, and risk mitigation. The existing RUL prediction algorithms mostly constitute deep learning frameworks. In this paper, we implement LSTM and GRU models and compare the obtained results with a proposed genetically trained neural network. The current models solely depend on Adam and SGD for optimization and learning. Although the models have worked well with these optimizers, even little uncertainties in prognostics prediction can result in huge losses. We hop...</blockquote>
+</div>
+<div class="paper-detail">
+<h3>51. On Accurate and Reliable Anomaly Detection for Gas Turbine Combustors: A Deep Learning Approach</h3>
+<ul>
+<li><strong>Authors</strong>: Weizhong Yan, Lijie Yu</li>
+<li><strong>Date</strong>: 2019-08-25</li>
+<li><strong>Keywords</strong>: Gas Turbine, Deep Learning, Combustion, Neural Network, Anomaly Detection</li>
+<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/1908.09238" target="_blank">1908.09238</a> | <a href="https://arxiv.org/pdf/1908.09238" target="_blank">PDF</a></li>
+<li><strong>Code</strong>: N/A</li>
+</ul>
+<blockquote>Monitoring gas turbine combustors health, in particular, early detecting abnormal behaviors and incipient faults, is critical in ensuring gas turbines operating efficiently and in preventing costly unplanned maintenance. One popular means of detecting combustor abnormalities is through continuously monitoring exhaust gas temperature profiles. Over the years many anomaly detection technologies have been explored for detecting combustor faults, however, the performance (detection rate) of anomaly detection solutions fielded is still inadequate. Advanced technologies that can improve detection pe...</blockquote>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Auto-generated by <a href="https://github.com/xgxgnpu/Daily-GasTurbineML">Daily-GasTurbineML</a> |
+  Data from <a href="https://arxiv.org" target="_blank">arXiv</a></p>
+</div>
+
+<script>
+function switchLang(lang) {
+  document.getElementById('section-cn').style.display = (lang === 'cn') ? 'block' : 'none';
+  document.getElementById('section-en').style.display = (lang === 'en') ? 'block' : 'none';
+  document.getElementById('btn-cn').className = (lang === 'cn') ? 'tab-btn active' : 'tab-btn';
+  document.getElementById('btn-en').className = (lang === 'en') ? 'tab-btn active' : 'tab-btn';
+}
+</script>
+</body>
+</html>
