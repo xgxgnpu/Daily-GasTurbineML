@@ -826,7 +826,7 @@ def main():
             new_papers = fetch_category(cat_key, cat_info, all_existing_ids, args.append)
             new_papers.sort(key=lambda x: x["date"], reverse=True)
             existing_cat = existing_by_cat.get(cat_key, [])
-            all_papers[cat_key] = existing_cat + new_papers
+            all_papers[cat_key] = sorted(existing_cat + new_papers, key=lambda x: x["date"], reverse=True)
             print(f"  Category total: {len(existing_cat)} + {len(new_papers)} = {len(all_papers[cat_key])}")
     else:
         existing_ids = set()
