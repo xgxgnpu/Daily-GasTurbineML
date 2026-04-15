@@ -20,7 +20,7 @@
 
 ## Overview
 
-This repository independently tracks the latest research on **machine learning and physics-informed methods applied to gas turbines and turbomachinery**. It covers **51 papers** across 6 categories.
+This repository independently tracks the latest research on **machine learning and physics-informed methods applied to gas turbines and turbomachinery**. It covers **71 papers** across 6 categories.
 
 Topics include: PINN for turbomachinery flows, surrogate models for performance prediction, deep learning for aerodynamic design, CFD-ML hybrid methods, combustion ML, and gas turbine health monitoring.
 
@@ -86,7 +86,7 @@ Deep learning for condition monitoring, fault detection and prognostics in gas t
 
 ---
 
-**Total papers**: 51
+**Total papers**: 71
 
 ## Usage
 
