@@ -1,6 +1,6 @@
 # Gas Turbine Machine Learning — Daily Paper Tracker
 
-> Updated: 2026.04.15
+> Updated: 2026.04.16
 > Keywords: Gas Turbine, Turbomachinery, PINN, Deep Learning, Surrogate Model, CFD, Combustion, Fault Diagnosis
 > Total: 71 papers across 6 categories
 
